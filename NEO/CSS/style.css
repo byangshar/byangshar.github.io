@@ -1,0 +1,33 @@
+ body{
+    background: linear-gradient(#56626e, #141618);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    }
+
+    .home{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        min-height: 30vh;
+        height: 10%;
+
+           color:gray;
+        background-image: url(Graphics/Site/main-banner.webp);
+        background-size: cover;
+          font-size: 1.3rem;
+    }
+
+.navi{color: gray;
+    list-style: none;
+    display: flex;}
+
+.whatremainsofthehidden{width: 50vh;}
+
+.wrothlink{font-size: large;}
+
+:any-link{
+    color: rgb(138, 151, 216);
+}
