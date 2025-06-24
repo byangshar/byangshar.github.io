@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-    --primary-color: rgb(141, 141, 141);
+    --primary-color: rgb(178, 192, 205);
     --text-color: white;
     --bg-gradient-start: #56626e;
     --bg-gradient-end: #141618;
@@ -27,14 +27,13 @@ body {
 
 /* Header Styles */
 .main-header {
-    background-image: url("/NEO/graphics/Site/header.webp") !important;
+    background-image: url("/graphics/Site/header2.webp") !important;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    padding: 2rem 0;
-    position: relative;
-    z-index: 10;
-}
+    height:200px;
+    padding: 4rem 0;
+    }
 
 .header-content {
     width: 90%;
@@ -46,8 +45,8 @@ body {
 }
 
 .site-title {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 900;
     letter-spacing: 1px;
 }
 
@@ -60,7 +59,8 @@ body {
 .main-navigation a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -143,16 +143,15 @@ body {
     color: var(--bg-gradient-end);
 }
 
-/* About Section */
-.about-section {
-    padding: var(--section-spacing) 0;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+.old-site-section{
+    padding: 1rem;
 }
 
-.location {
-    font-size: 1.2rem;
-    opacity: 0.8;
+.old-site-redirect{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.0rem;
+    opacity:0.2;
 }
 
 /* Footer Styles */
