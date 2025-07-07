@@ -1,0 +1,75 @@
+/* Base Styles */
+:root {
+    --primary-color: #a8c7fa;
+    --text-color: rgba(255, 255, 255, 0.9);
+    --bg-gradient-start: #1a1e23;
+    --bg-gradient-end: #0d0f12;
+    --section-spacing: 4rem;
+    --content-padding: 1.5rem;
+    --link-hover-transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif !important;
+    white-space: pre-line;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+.poem{
+    margin: 0;
+    margin-left: 5vw;
+    margin-right: auto;
+
+}
+
+body {
+    padding: var(--content-padding);
+    background: url(/graphics/Writing/2025/July/7/7.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    min-height: 100vh;
+    padding: 0rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.imagecred{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: 60%;
+    padding: 1rem 0;
+}
+
+.imagecred:hover {
+    opacity: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    :root {
+        --content-padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+
+.imagecred:hover {
+    opacity: 100%;
+    transition: all 0.3s ease;
+}
+}
