@@ -3,6 +3,8 @@
     --primary-color: rgb(178, 192, 205);
     --text-color: white;
     --bg-gradient-start: #56626e;
+    --cusbg-gradient-start: #000000;
+    --cusbg-gradient-end: #00000000;
     --bg-gradient-end: #141618;
     --section-spacing: 2rem;
     --mobile-breakpoint: 768px;
@@ -15,17 +17,22 @@
 }
 
 body {
-    background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end));
+    
+    /*background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end));*/
+    background: url(/graphics/Writing/banner.webp) ;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
     color: var(--text-color);
     line-height: 1.6;
     min-height: 100vh;
-    padding: 1rem;
 }
 
 .container {
+    background-color: #242424cf;
+    opacity: .9;
+    width: 90%;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -56,17 +63,17 @@ body {
 }
 
 header{
-    background: url(/graphics/Writing/banner.webp) ;
-    background-size: cover;
+    background: linear-gradient(var(--cusbg-gradient-start), var(--cusbg-gradient-end));
     background-repeat: no-repeat;
+    opacity: 1;
     text-align: center;
-
-    margin: 0;
-    opacity: .75;
+    margin-bottom: 2rem;
     padding: 2rem;
+
 }
 
 .year {
+    padding-left: 1rem;
     font-size: 2rem;
     font-weight: 900;
     flex: 0 0 20%;
@@ -106,17 +113,19 @@ header{
 }
 
 .main-footer {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(var(--cusbg-gradient-end), var(--cusbg-gradient-start));
     display: flex;
     justify-content: center;
     width: 100%;
     margin: rem ;
-    padding: 2rem  0;
-    ;
+    padding: 3rem  0;
 }
 
 .main-navigation ul {
     display: flex;
-    width: 80%;
+    width: 90%;
     gap: 2rem;
     list-style: none;
 }
@@ -133,20 +142,11 @@ header{
 }
 
 .main-navigation a:hover {
-    color: var(--primary-color);
-    opacity: 1;
+    opacity: .2;
+    transition: all 0.3s ease;
 }
 
-.main-navigation a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: -2px;
-    left: 0;
-    background-color: var(--primary-color);
-    transition: var(--link-hover-transition);
-}
+
 
 .main-navigation a:hover::after {
     width: 100%;
@@ -164,6 +164,8 @@ header{
     }
     
     .year {
+        padding-left: 1rem;
+
         font-size: 1.8rem;
         letter-spacing: 2px;
 
@@ -171,12 +173,17 @@ header{
     }
     
     .month {
+        padding-left: 1rem;
         font-size: 1.3rem;
         letter-spacing: 2px;
     }
     
     .poem {
+        padding-left: 1rem;
         font-size: 1.1rem;
+    }
+    .date{
+        padding-left: 1rem;
     }
     .main-navigation ul {
         flex-direction: row;

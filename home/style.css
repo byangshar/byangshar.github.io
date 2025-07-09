@@ -2,9 +2,11 @@
 :root {
     --primary-color: rgb(178, 192, 205);
     --text-color: white;
-    --bg-gradient-start: #56626e;
-    --bg-gradient-end: #141618;
+    --bg-gradient-start: #141618;
+    --bg-gradient-end: #14161800;
     --section-spacing: 4rem;
+
+
 }
 
 * {
@@ -14,7 +16,9 @@
 }
 
 body {
-    background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end));
+    /*background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end));*/
+    background-image: url("/graphics/Site/header2.1.webp"); 
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Times New Roman', Times, serif;
@@ -27,17 +31,18 @@ body {
 
 /* Header Styles */
 .main-header {
-    background-image: url("/graphics/Site/header2.webp") !important;
+    background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end)) !important;
+    opacity: 70%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height:200px;
-    padding: 4rem 0;
+    padding: 2rem 0;
     }
 
 .header-content {
     width: 90%;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -156,8 +161,8 @@ body {
 
 /* Footer Styles */
 .main-footer {
-    padding: 3rem 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.2rem 0;
+    background: linear-gradient(var(--bg-gradient-end), var(--bg-gradient-start)) !important;
 }
 
 .footer-content {
@@ -180,6 +185,7 @@ body {
 }
 
 .contact-info a {
+
     color: var(--text-color);
     text-decoration: none;
     font-style: normal !important;
@@ -204,13 +210,13 @@ body {
 .footer-navigation a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1rem;
-    opacity: 0.7;
+    font-size: 1.2rem;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
 
 .footer-navigation a:hover {
-    opacity: 1;
+    opacity: 0.2;
 }
 
 /* Responsive Design */
@@ -227,8 +233,14 @@ body {
         flex-direction:row;
         gap: 1rem;
     }
+    .footer-navigation a {
+        font-size: 1.0rem;
 
+    }
+ 
+    /*https://stackoverflow.com/questions/14821087/what-is-the-right-way-to-create-a-horizontal-line-with-html-and-css*/    
+}
     .release-title {
         font-size: 2rem;
     }
-}
+
