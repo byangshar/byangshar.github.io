@@ -1,18 +1,36 @@
 /* Base Styles */
 :root {
-    --primary-color: rgb(178, 192, 205);
+    --primary-color: rgba(255, 255, 255, 0.459);
+    --primcolhov: rgba(255, 255, 255, 0.195);
     --text-color: white;
     --bg-gradient-start: #141618;
     --bg-gradient-end: #14161800;
+
+    --cusbg-gradient-start: #000000;
+    --cusbg-gradient-end: #00000000;
+
     --section-spacing: 4rem;
-
-
+    --hrcol: rgba(255, 255, 255, 0.337);
+    
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.hrdiv{
+    margin: 0 auto;
+    width: 60%;
+    height: 1px;
+    background-color: var(--hrcol);
+    border: none;
+    top: -1px;
+    }
+.header-container {
+    position: relative;
+    margin-bottom: 0;
 }
 
 body {
@@ -27,17 +45,19 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 /* Header Styles */
 .main-header {
-    background: linear-gradient(var(--bg-gradient-start), var(--bg-gradient-end)) !important;
-    opacity: 70%;
+    background: linear-gradient(var(--cusbg-gradient-start), var(--cusbg-gradient-end)) !important;
+    opacity: 1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height:200px;
-    padding: 2rem 0;
+    height:150px;
+    padding: 2rem;
+    position: relative;
     }
 
 .header-content {
@@ -66,28 +86,15 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
+    transition: color 0.5s ease;
+    position: bottom;
 }
 
 .main-navigation a:hover {
     color: var(--primary-color);
 }
 
-.main-navigation a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: -2px;
-    left: 0;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
-}
 
-.main-navigation a:hover::after {
-    width: 100%;
-}
 
 /* Hero Section */
 .hero-section {
@@ -120,7 +127,7 @@ body {
 
 .album-art {
     margin: 2rem auto;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .album-art img {
@@ -134,24 +141,23 @@ body {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: transparent;
-    color: var(--primary-color);
+    color: var(--text-color);
     border: 1px solid var(--primary-color);
     text-decoration: none;
     font-size: 1.1rem;
-    margin-top: 1.5rem;
-    transition: all 0.3s ease;
-    border-radius: 4px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
 }
 
 .cta-button:hover {
-    background-color: var(--primary-color);
-    color: var(--bg-gradient-end);
+    backdrop-filter: blur(10px);
+
+    color: var();
 }
 
 .old-site-section{
     padding: 1rem;
 }
-
 .old-site-redirect{
     text-decoration: none;
     color: var(--text-color);
@@ -162,7 +168,7 @@ body {
 /* Footer Styles */
 .main-footer {
     padding: 1.2rem 0;
-    background: linear-gradient(var(--bg-gradient-end), var(--bg-gradient-start)) !important;
+    background: linear-gradient(var(--cusbg-gradient-end), var(--cusbg-gradient-start)) !important;
 }
 
 .footer-content {
@@ -198,7 +204,7 @@ body {
 
 .indic {
     font-size: 1rem;
-    font-style: italic;
+    font-style:normal;
 }
 
 .footer-navigation ul {
@@ -240,7 +246,3 @@ body {
  
     /*https://stackoverflow.com/questions/14821087/what-is-the-right-way-to-create-a-horizontal-line-with-html-and-css*/    
 }
-    .release-title {
-        font-size: 2rem;
-    }
-
