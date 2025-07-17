@@ -1,0 +1,209 @@
+*{
+    font-family: monospace;
+}
+
+:root{
+    --tfl:1.5rem;
+    --text: white;
+    --title: 3rem;
+    --cusbg-gradient-start: #000000;
+    --cusbg-gradient-end: #00000000;
+    --trans: 0.3s ease;
+
+}
+
+body {
+    color: var(--text);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column; /* important */
+    margin: auto;
+
+    background: url("/graphics/Site/header2.1.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hdrdiv{
+    background: linear-gradient(var(--cusbg-gradient-start), var(--cusbg-gradient-end));
+}
+
+.hdr{
+    width: 80%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* important (for y axis?)*/
+}
+
+/*  nav   */
+.hdrnav a{
+    color: var(--text);
+    text-decoration: none;
+    font-size: var(--tfl);
+
+    transition: var(--trans);
+}   
+.hdrnav a:hover{
+    opacity: .3;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+
+}
+.hdrnav ul{
+    display: flex;
+    list-style: none;
+
+
+    gap: 2rem;
+}
+
+.hdrN{
+    font-size: var(--title);
+    animation: nblink 5s infinite;
+}
+@keyframes nblink {
+    0% {opacity: 1;}
+    50% {opacity: .5;}
+    100% {opacity: 1;}
+    
+}
+
+
+/*  main section    */
+
+.tmein{
+    font-size: 2rem;
+    font-weight: 400;
+
+    opacity: .7;
+
+}
+.meinwroth{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.lnb a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text);
+
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #0000002d;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    transition: var(--trans);
+}
+.lnb a:hover{
+    backdrop-filter: blur(1px);
+    font-size: 1.5rem;
+}
+.lnb{
+    padding:2rem;
+}
+
+.wroth{
+    width: 800px;
+    height: auto;
+    
+    border-radius:40px;
+
+    padding: 2rem;
+    transition: var(--trans);
+}
+
+/*  footer  */
+
+.fut{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    background: linear-gradient(var(--cusbg-gradient-end), var(--cusbg-gradient-start));
+}
+
+.fut2{
+    margin: auto;
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.futinf{
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.futEm a{
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text);
+    transition: var(--trans);
+}
+.futEm a:hover{
+    opacity: .5;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.futN{
+    list-style: none;
+}
+.futN a{
+    text-decoration: none;
+    color: var(--text);
+
+    font-size: 1.2rem;
+    
+    transition: var(--trans);
+}
+.futN a:hover{
+    opacity: .5;
+    font-size: 1.1rem;
+    letter-spacing:5px;
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+    body{
+        
+        background-size: cover;
+    }
+    .meinwroth{
+        padding-bottom: 1rem;
+    }
+    .hdr, .futr{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hdrnav, .futN {
+        flex-direction: row;
+        text-align: center;
+
+    }
+    .wroth{
+        width: 85%;
+        }
+    .mein a{
+        font-size: 1.2rem;
+    }
+    .futinf, .futN a{
+        font-size: 1.2rem;
+    }
+    .fut{
+        padding-top: 9rem;
+    }
+}
