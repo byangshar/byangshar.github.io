@@ -51,14 +51,11 @@ body {
 }   
 .hdrnav a:hover{
     opacity: .3;
-    font-size: 1.4rem;
-    letter-spacing: 3px;
-
+    font-size: 1.2rem;
 }
 .hdrnav ul{
     display: flex;
     list-style: none;
-
 
     gap: 2rem;
 }
@@ -94,20 +91,24 @@ body {
     text-decoration: none;
     color: var(--text);
 
-    gap: 1rem;
-    padding: 1rem;
     background-color: #0000002d;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-
+    padding: 1rem;
     transition: var(--trans);
 }
 .lnb a:hover{
     backdrop-filter: blur(1px);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .lnb{
-    padding:2rem;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    padding:3.2rem;
+    list-style: none;
+
 }
 
 .wroth{
@@ -155,7 +156,7 @@ body {
 }
 .futEm a:hover{
     opacity: .5;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
 }
 
@@ -178,8 +179,11 @@ body {
 
 /*responsive*/
 @media (max-width: 768px) {
-    body{
+    .hdrN{
+        font-size: 2.5rem;
         
+    }
+    body{
         background-size: cover;
     }
     .meinwroth{
@@ -187,23 +191,44 @@ body {
     }
     .hdr, .futr{
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
-    .hdrnav, .futN {
+    .hdr{
+        padding-bottom:4rem;
+    }
+    .hdrnav ul, .futN ul{
         flex-direction: row;
-        text-align: center;
-
+        margin: auto;
+        gap: 3rem;
+        display: flex;
+        align-content: center !important;
     }
+    .hdrnav ul{
+        margin-left: -3rem; /* if it aint broke, don't fix it*/
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     .wroth{
         width: 85%;
         }
     .mein a{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    .lnb a:hover{
+    backdrop-filter: blur(1px);
+    font-size: 1rem !important;
     }
     .futinf, .futN a{
         font-size: 1.2rem;
     }
     .fut{
-        padding-top: 9rem;
+        padding-top: 3.2rem;
     }
+    .futN a:hover{
+        letter-spacing: normal !important;
+        font-size: 1.3rem;
+    }
+
 }
