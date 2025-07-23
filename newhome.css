@@ -1,0 +1,150 @@
+*{
+    font-family: monospace;
+
+}
+
+:root{
+    --fontcolor: white;
+
+    padding-left: 0rem;
+    margin-left: 0rem;
+
+}
+
+body{
+    background-color: black;
+    color: var(--fontcolor);
+
+
+}
+
+/* header */
+header{
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+/* heading */
+.bys{
+    font-size: 3rem;
+    animation: bys 5s infinite;
+}
+
+@keyframes bys{
+    0% {color: white}
+    50% {color: white; opacity: .4}
+    100% {color: white}
+}
+
+/* main navigation */
+.main-navigation{
+    list-style: none;
+    margin-left: -35px;
+
+    display: flex;
+    gap: 2rem;
+}
+.main-navigation a{
+    text-decoration: none;
+
+    color: var(--fontcolor);  
+    font-size: 1.3rem;
+
+    transition: .3s ease;
+}
+.main-navigation a:hover{
+    opacity: .5;
+}
+
+/* album and "latest release" */
+.mainpage{
+    background-color: rgb(73, 73, 73);
+}
+
+.album-repr{
+ margin-left: 1rem;
+}
+h3{
+    opacity: .75;
+    font-size: 1.5rem;
+}
+
+.album{
+    font-size: 2rem;
+}
+
+.wroth{
+    width: 400px;
+    height: auto;
+    
+    margin-left: 1rem;
+    border-radius: 4px;
+}
+
+.album-links{
+    text-decoration: none;
+    color: var(--fontcolor);
+    font-size: 1.5rem;
+
+    margin-left: 2rem;
+    padding: 1rem;
+    transition: .3s ease;
+}
+.album-links:hover{
+    opacity: .5;
+}
+
+/* footer */
+
+.card{
+    list-style: none;
+    font-size: 1.3rem;
+    
+    margin-left: -10px;
+    }
+.card li{
+    padding:.5rem
+}
+.card a{
+    text-decoration: none;
+    color: var(--fontcolor);
+    transition: .3s ease;
+    }
+.card a:hover{
+    opacity: .5;
+    }
+
+
+/* Responsive Design:
+
+* 480px is for smaller phones.
+* 600px covers most smartphones.
+* 768px includes larger phones and small tablets.*/
+
+@media(max-width: 600px){
+    .bys{
+        font-size: 2.5rem;
+    }
+    .main-navigation a{
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    .album{
+        font-size: 1.5rem;
+    }
+    .wroth{
+        width: 90%;
+    }
+    .album-links{
+        font-size: 1.1rem;
+
+        margin-left: 3rem;
+        padding: 1rem;
+        transition: .3s ease;
+    }
+
+
+
+}

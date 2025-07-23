@@ -20,7 +20,8 @@ body {
     flex-direction: column; /* important */
     margin: auto;
 
-    background: url("/graphics/Site/header2.1.webp");
+    /*background: url("/graphics/Site/header2.1.webp");*/
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
