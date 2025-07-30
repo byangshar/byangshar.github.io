@@ -1,76 +1,133 @@
-/* Base Styles */
-:root {
-    --primary-color: #a8c7fa;
-    --text-color: rgba(255, 255, 255, 0.9);
-    --bg-gradient-start: #1a1e23;
-    --bg-gradient-end: #0d0f12;
-    --section-spacing: 4rem;
-    --content-padding: 1.5rem;
-    --link-hover-transition: all 0.3s ease;
+*{
+    font-family: 'Times New Roman', Times, serif;
 }
 
-* {
+:root{
+    --fontcolor: white;
+
+    --common-font-size: 1.5rem;
+    --h2-font-size:2rem;
+    --h1-font-size:2.5rem;
+
+    --linebreak: rgba(255, 255, 255, 0.096);
+
+    --button-color: rgba(152, 152, 152, 0.357);
+    --button-padding: 5px;
+    --button-rounding: 4px;
+}
+
+.a4{
+    background: rgba(0, 0, 0, 0.45);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.622);
+
+    width: 300mm;
+    height: auto;
+    padding: 2rem;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif !important;
-    white-space: pre-line;
-    word-break: keep-all;
-    word-wrap: break-word;
-    backdrop-filter: blur(1px);
+
+    transition: .5s ease;
 }
 
-.poem{
-    margin: 0;
-    margin-left: 5vw;
-    margin-right: auto;
+body{
+    margin:0;
+    padding:0;
 
-}
+    display: flex;
+    justify-content: center;
 
-body {
-    padding: var(--content-padding);
+    color: var(--fontcolor);
+
     background: url(/graphics/Writing/2025/July/16/16.webp);
-    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 1.2rem;
-    color: var(--text-color);
-    line-height: 1.8;
-    min-height: 100vh;
-    padding: 0rem;
 }
 
-h1 {
+.poem-section{
+    margin-left: -20px;
+}
+.poem-heading{
     font-size: 3rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    margin-left: 60px;
+
+    margin-bottom: 80px;
 }
 
-.imagecred{
-    font-size: 1.1rem;
+.poem-lines{
+    font-size: 1.3rem;
+    margin-left: 60px;
+
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: break-word;
+}
+
+/* footer */
+.credit{
+    font-size: 1.2rem;
+    opacity: .75;
+
+    margin-left: 20px;
+}
+
+/* imagecred */
+.image-credit{
     text-decoration: none;
-    color: var(--text-color);
-    opacity: 60%;
-    padding: 1rem 0;
+    color: var(--fontcolor);
+    opacity: .5;
+
+    transition: .3s ease;
+
+}
+.image-credit:hover{
+    opacity: .3;
 }
 
-.imagecred:hover {
-    opacity: 100%;
-    transition: all 0.3s ease;
+/* NAVIGATION */
+.navigation{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navigation a{
+    text-decoration: none;
+    color: var(--fontcolor);
+    font-size: 1.2rem;
+
+    border: 1px solid;
+    border-color: var(--button-color);
+    padding: 7px;
+    border-radius: 4px;
+
+    opacity: .5;
+    transition: .3s ease;
+}
+.navigation a:hover{
+    opacity: .2;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    :root {
-        --content-padding: 1rem;
-    }
-    
-    h1 {
-        font-size: 2.5rem;
-    }
-    
+/* Responsive Design:
 
-.imagecred:hover {
-    opacity: 100%;
-    transition: all 0.3s ease;
+* 480px is for smaller phones.
+* 600px covers most smartphones.
+* 768px includes larger phones and small tablets.*/
+
+@media(max-width: 600px){
+
+.a4{
+    width: 100%;
+    padding: 1.5rem;
+}
+.poem-section{
+    margin-left: -4rem;
+}
+
+.navigation{
+    margin-left: -45px;
 }
 }

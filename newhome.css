@@ -1,32 +1,61 @@
 *{
     font-family: monospace;
-
 }
 
 :root{
     --fontcolor: white;
 
-    padding-left: 0rem;
-    margin-left: 0rem;
+    --common-font-size: 1.5rem;
+    --h2-font-size:2rem;
+    --h1-font-size:2.5rem;
 
+    --linebreak: rgba(255, 255, 255, 0.096);
+
+    --button-color: rgba(152, 152, 152, 0.357);
+    --button-padding: 5px;
+    --button-rounding: 4px;
 }
 
 body{
-    background-color: black;
+    background: url(/graphics/Site/neo\ header\ crop\ 1.webp);
+    /* background-position: ; */
     color: var(--fontcolor);
 
+    margin: 0;
+    display:flex;
+    justify-content: center;
+}
 
+.a4{
+    background: rgba(0, 0, 0, 0.619);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.622);
+
+    width: 300mm;
+    height: 300mm;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    transition: .5s ease;
+}
+
+.break{
+    border: solid 1px;
+    border-color: var(--linebreak);
+    margin: 40px
 }
 
 /* header */
 header{
-    margin-bottom: 3rem;
+    margin-bottom: 0;
     margin-left: 2rem;
 }
 
 /* heading */
 .bys{
-    font-size: 3rem;
+    font-size: 4rem;
     animation: bys 5s infinite;
 }
 
@@ -40,25 +69,37 @@ header{
 .main-navigation{
     list-style: none;
     margin-left: -35px;
+    margin-bottom: 0;
 
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+}
+.main-navigation li{
+    border: 1px solid;
+    border-color: var(--button-color);
+    padding: var(--button-padding);
+    border-radius: var(--button-rounding);
 }
 .main-navigation a{
     text-decoration: none;
 
     color: var(--fontcolor);  
-    font-size: 1.3rem;
+    font-size: var(--common-font-size);
 
-    transition: .3s ease;
+    transition: .5s ease;
 }
-.main-navigation a:hover{
+.main-navigation a:hover, .main-navigation li:hover{
     opacity: .5;
+}
+.youtubelink:hover{
+    transition: .5s ease;
+    background-color: rgba(217, 83, 94, 0.539);
 }
 
 /* album and "latest release" */
 .mainpage{
-    background-color: rgb(73, 73, 73);
+    /* background-color: rgba(73, 73, 73, 0.575); */
+    margin-left: 20px;
 }
 
 .album-repr{
@@ -66,37 +107,47 @@ header{
 }
 h3{
     opacity: .75;
-    font-size: 1.5rem;
+    font-size: var(--h2-font-size);
 }
 
 .album{
-    font-size: 2rem;
+    font-size: var(--h1-font-size);
 }
 
 .wroth{
-    width: 400px;
+    width: 700px;
     height: auto;
     
     margin-left: 1rem;
     border-radius: 4px;
 }
 
-.album-links{
+.albumlist{
+    list-style: none;
+    margin-left: -25px;
+}
+.albumlist a{
     text-decoration: none;
     color: var(--fontcolor);
-    font-size: 1.5rem;
+    font-size: var(--common-font-size);
 
-    margin-left: 2rem;
-    padding: 1rem;
-    transition: .3s ease;
+    border: 1px solid;
+    border-color: var(--button-color);
+    padding: var(--button-padding);
+    border-radius: var(--button-rounding);
+    transition: .5s ease;
 }
-.album-links:hover{
+.albumlist a:hover, .albumlist li:hover{
     opacity: .5;
+}
+.albumlist li{
+    margin-bottom: 30px;
 }
 
 /* footer */
 
 .card{
+    position: relative;
     list-style: none;
     font-size: 1.3rem;
     
@@ -122,30 +173,52 @@ h3{
 * 768px includes larger phones and small tablets.*/
 
 @media(max-width: 600px){
-    .bys{
-        font-size: 2.5rem;
+
+    body{
+    background: url(/graphics/Site/neo\ header\ crop\ 1.webp);
+    /* background-position: ; */
+    
+    color: var(--fontcolor);
+
+    margin: 0;
+    display:flex;
+    justify-content: center;
     }
+    .a4{
+    width: 300nm;
+    height: 300mm;
+    padding: 0rem;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    transition: .5s ease;
+    }
+    /* .bys{
+        font-size: 2.5rem;
+    } */
     .main-navigation a{
         font-size: 1.2rem;
     }
     h3{
-        font-size: 1.3rem;
-    }
-    .album{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .wroth{
         width: 90%;
     }
-    .album-links{
-        font-size: 1.1rem;
+    .album{
+        font-size: 2rem;
 
-        margin-left: 3rem;
+        margin-left: -10px;
         padding: 1rem;
         transition: .3s ease;
     }
+    .albumlist a{
+        font-size: 1.2rem ;
+    }
+
+    /* footer */
     .card{
-        margin-left: -45px;
+        margin-left: -10px;
         font-size: 1.1rem;
     }
 
