@@ -95,6 +95,14 @@ header{
 .main-navigation a:hover, .main-navigation li:hover{
     opacity: .5;
 }
+.current-page{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.445) !important; 
+}
+.youtubelink:hover{
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.539);
+}
 
 .table{
     font-size: 2rem;
@@ -166,31 +174,44 @@ header{
 /* RESPONSIVE DESIGN */
 
 @media(max-width: 600px){
+    body{
+    margin-left: -20px;}
+    .a4{
+        height: 300mm;
+        padding: 0;
+    }
+    .main-navigation{
+    flex-wrap: wrap;
+    }
+    .main-navigation a{
+    font-size: 1.2rem;
+    }
 
-.a4{
-    height: 300mm;
-}
+    /* table responsiveness */
+    .table{
+        display: flex;
+        justify-content: center;
 
-/* table responsiveness */
-.row{
-    width: 100%;
-}
-.year{
-    font-size: 2.5rem;
-    padding: 20px;
-}
-.month{
-    font-size: 1.8rem;
-    flex: 0 0 auto;
+    }
+    .row{
+        width: 90%;
+    }
+    .year{
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+    .month{
+        font-size: 1.8rem;
+        flex: 0 0 auto;
 
-    padding: 20px;
-}
-.date{
-    font-size: 1.6rem;
-    flex: 0 0 auto;
-}
+        padding: 20px;
+    }
+    .date{
+        font-size: 1.6rem;
+        flex: 0 0 auto;
+    }
 
-.poem{
-    font-size: 1.5rem;
-}
+    .poem{
+        font-size: 1.5rem;
+    }
 }

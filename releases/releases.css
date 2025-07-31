@@ -1,13 +1,83 @@
+*{
+    margin: 0;
+    transition: .3s ease;
+
+    .border{
+        border: 1px solid;
+        color: white;
+        opacity: .3;
+
+        margin: auto;
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+}
+
 body{
-    background-color: black;
+    background: url(/graphics/Releases/fancy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    backdrop-filter: blur(20px);
+
+    /* background-color: black; */
     color: white;
     font-size: 1.3rem;
-}
-.gothic{
+
     display: flex;
-    flex-direction: column;
-    margin: 100px;
+    justify-content: center;
 }
+
+.a4{
+    background-color: rgba(0, 0, 0, 0.524);
+    width: 300mm;
+    height: 300mm;
+}
+
 h1{
-    color: white;
+    padding: 2rem;
+}
+h2{
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+h1,h2{
+    margin-left: 2rem;
+}
+ul, p{
+    margin-left: 4rem;
+}
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.501);
+    transition: .3s ease;
+}
+.credit{
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+a:hover, .credit:hover{
+    opacity: .5;
+}
+li{
+    padding-top: 1rem;
+    list-style: none;
+}
+
+
+/* responsive */
+
+@media (max-width: 600px){
+    h1, h2, .credit{
+        margin-left: -15px;
+    }
+    p{
+        margin-left: 20px;
+    }
+    li{
+        margin-left: -40px;
+    }
 }

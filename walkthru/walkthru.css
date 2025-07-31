@@ -1,9 +1,33 @@
 *{
     font-family: monospace;
+
+    .break{
+    border: solid 1px;
+    border-color: var(--linebreak);
+    margin: 40px
+    }
+
+    .links{
+        text-decoration: none;
+        color: var(--link-color);
+        transition: .3s ease;
+    }
+    .walk-navigation{
+        text-decoration: none;
+        color: var(--link-color);
+        font-size: 1.7rem;
+
+        transition: 0.3s ease;
+    }
+    .links:hover, .walk-navigation:hover{
+        opacity: .5;
+    }
+
 }
 
 :root{
     --fontcolor: white;
+    --link-color:rgb(136, 136, 136);
 
     --common-font-size: 1.5rem;
     --h2-font-size:2rem;
@@ -18,16 +42,18 @@
 
 body{
     background: url(/graphics/Site/neo\ header\ crop\ 1.webp);
-    /* background-position: ; */
+    background-position: bottom;
     color: var(--fontcolor);
 
     margin: 0;
     display:flex;
     justify-content: center;
+
+    font-size: 1.4rem;
 }
 
 .a4{
-    background: rgba(0, 0, 0, 0.619);
+    background: rgba(0, 0, 0, 0.568);
     background-repeat: no-repeat;
     backdrop-filter: blur(7px);
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.622);
@@ -39,12 +65,6 @@ body{
     overflow: hidden;
 
     transition: .5s ease;
-}
-
-.break{
-    border: solid 1px;
-    border-color: var(--linebreak);
-    margin: 40px
 }
 
 /* header */
@@ -97,88 +117,57 @@ header{
 }
 .youtubelink:hover{
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.539);
+    background-color: rgba(217, 83, 94, 0.539);
 }
 
-/* album and "latest release" */
+/* MAINPAGE */
+
 .mainpage{
-    /* background-color: rgba(73, 73, 73, 0.575); */
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
 }
-
-.album-repr{
- margin-left: 1rem;
-}
-h3{
+.qq{
+    font-size: 2rem;
     opacity: .75;
-    font-size: var(--h2-font-size);
+    font-weight: bold;
+}
+.aa{
+    max-width: 800px;
+    margin-left: 12px;
+    margin-right: 20px;
+
+    /* white-space: ; */
+    word-break: break-word;
+    overflow: break-word;
 }
 
-.album{
-    font-size: var(--h1-font-size);
+/* qq navigation */
+.navigation-list li{
+    padding-bottom: 1rem;
 }
-
-.wroth{
-    width: 800px;
-    height: auto;
-    
-    margin-left: 1rem;
-    border-radius: 4px;
-}
-
-.albumlist{
-    list-style: none;
+.navigation-list{
     margin-left: -25px;
-}
-.albumlist a{
-    text-decoration: none;
-    color: var(--fontcolor);
-    font-size: var(--common-font-size);
+    margin-right: 20px;
 
-    border: 1px solid;
-    border-color: var(--button-color);
-    padding: var(--button-padding);
-    border-radius: var(--button-rounding);
-    transition: .5s ease;
+    word-break: break-word;
+
+    max-width: 800px;
 }
-.albumlist a:hover, .albumlist li:hover{
+
+/* footer-ish */
+.updated{
     opacity: .5;
-}
-.albumlist li{
-    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
-/* footer */
 
-.card{
-    position: relative;
-    list-style: none;
-    font-size: 1.3rem;
-    
-    margin-left: -10px;
-    }
-.card li{
-    padding:.5rem
-}
-.card a{
-    text-decoration: none;
-    color: var(--fontcolor);
-    transition: .3s ease;
-    }
-.card a:hover{
-    opacity: .5;
-    }
 
-/* Responsive Design:
-* 480px is for smaller phones.
-* 600px covers most smartphones.
-* 768px includes larger phones and small tablets.*/
+/* Responsive */
 
-@media(max-width: 600px){
+@media (max-width: 600px){
 
     body{
-    background: url(/graphics/Site/neo\ header\ crop\ 1.webp);
-    /* background-position: ; */
     margin-left: -20px;
     }
     .a4{
@@ -190,38 +179,11 @@ h3{
 
     transition: .5s ease;
     }
-    /* .bys{
-        font-size: 2.5rem;
-    } */
-     .main-navigation{
+    .main-navigation{
         flex-wrap: wrap;
-     }
+    }
     .main-navigation a{
         font-size: 1.2rem;
     }
-    h3{
-        font-size: 1.6rem;
-    }
-    .wroth{
-        width: 90%;
-    }
-    .album{
-        font-size: 2rem;
-
-        margin-left: -10px;
-        padding: 1rem;
-        transition: .3s ease;
-    }
-    .albumlist a{
-        font-size: 1.2rem ;
-    }
-
-    /* footer */
-    .card{
-        margin-left: -10px;
-        font-size: 1.1rem;
-    }
-
-
 
 }
