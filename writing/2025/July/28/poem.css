@@ -17,9 +17,9 @@
 }
 
 .a4{
-    background: rgba(0, 0, 0, 0.375);
+    background: rgba(0, 0, 0, 0.419);
     background-repeat: no-repeat;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.622);
 
     width: 300mm;
@@ -39,7 +39,7 @@ body{
 
     color: var(--fontcolor);
 
-    background: url(/graphics/Writing/2025/July/28/28.webp);
+    background: url(/graphics/Writing/2025/July/28/28.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

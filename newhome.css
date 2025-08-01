@@ -33,7 +33,7 @@ body{
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.622);
 
     width: 300mm;
-    height: 300mm;
+    height: auto;
     padding: 2rem;
     box-sizing: border-box;
     overflow: hidden;
@@ -97,7 +97,7 @@ header{
 }
 .youtubelink:hover{
     transition: .5s ease;
-    background-color: rgba(255, 255, 255, 0.539);
+    background-color: rgba(217, 83, 94, 0.539);
 }
 
 /* album and "latest release" */
@@ -119,18 +119,24 @@ h3{
 }
 
 .wroth{
+    margin-left: 20px;
     width: 800px;
     height: auto;
     
-    margin-left: 1rem;
     border-radius: 4px;
+
+    transition: .8s ease;
 }
 
-.albumlist{
-    list-style: none;
-    margin-left: -25px;
+.wroth:hover{
+    opacity: .5;
 }
-.albumlist a{
+
+.albumlink-yt{
+    list-style: none;
+    padding: 2rem;
+}
+.albumlink-yt a{
     text-decoration: none;
     color: var(--fontcolor);
     font-size: var(--common-font-size);
@@ -141,13 +147,31 @@ h3{
     border-radius: var(--button-rounding);
     transition: .5s ease;
 }
-.albumlist a:hover, .albumlist li:hover{
+.albumlink-yt a:hover{
     opacity: .5;
 }
 .albumlist li{
     margin-bottom: 30px;
 }
 
+/* play */
+.play{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.bandcamp{
+    margin-left: 40px;
+}
+.bandcamp-embed{
+border: 0; width: 800px; height: 570px
+}
+
+.h3-ver2{
+    margin-top: 50px;
+}
 /* footer */
 
 .card{
@@ -155,7 +179,7 @@ h3{
     list-style: none;
     font-size: 1.3rem;
     
-    margin-left: -10px;
+    margin-left: -40px;
     }
 .card li{
     padding:.5rem
@@ -204,17 +228,21 @@ h3{
     }
     .wroth{
         width: 90%;
+
     }
     .album{
         font-size: 2rem;
-
         margin-left: -10px;
         padding: 1rem;
         transition: .3s ease;
     }
-    .albumlist a{
+    .albumlink{
         font-size: 1.2rem ;
     }
+    .bandcamp-embed{
+    border: 0; width: 400px; height: 570px
+    }
+
 
     /* footer */
     .card{
