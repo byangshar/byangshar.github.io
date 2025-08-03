@@ -16,6 +16,7 @@ And that's about it. This is a personal website project.
 * Better fluidity, specially the Writing page's mobile page.
 * Streamlining all CSS by adding the border tags into root.
 * Unifying Regular and Responsive Fonts and Colours into variables.
+* Add a link redirecting to this repository
 
 > edited: 1st August 2025.
 
