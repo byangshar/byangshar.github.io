@@ -187,6 +187,7 @@ header{
 
     /* table responsiveness */
     .table{
+        margin: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -198,7 +199,6 @@ header{
         display: flex;
         justify-content: center;
 
-        width: 90%;
     }
     .year{
         font-size: 2.5rem;
