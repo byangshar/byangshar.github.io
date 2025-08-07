@@ -1,255 +1,215 @@
 *{
     font-family: monospace;
-}
+    font-size: 1.3rem;
+    color: white;
 
-:root{
-    --fontcolor: white;
 
-    --common-font-size: 1.5rem;
-    --h2-font-size:2rem;
-    --h1-font-size:2.5rem;
+    transition: .4s ease;
 
-    --linebreak: rgba(255, 255, 255, 0.096);
+    margin: 0;
 
-    --button-color: rgba(152, 152, 152, 0.357);
-    --button-padding: 5px;
-    --button-rounding: 4px;
+    .break{
+        border: 1px solid;
+        margin: auto;
+
+        margin-top: 20px ;
+        margin-bottom: 20px;
+
+        opacity: .2;
+    }
+
+    h3{ font-size: 1.4rem;}
+    h2{ font-size: 1.8rem;}
+
+
 }
 
 body{
     background: url(/graphics/Site/neo\ header\ crop\ 1.webp);
-    /* background-position: ; */
-    color: var(--fontcolor);
-
-    margin: 0;
-    display:flex;
+    background-size: cover;
+    
+    display: flex;
     justify-content: center;
 }
 
 .a4{
-    background: rgba(0, 0, 0, 0.619);
-    background-repeat: no-repeat;
-    backdrop-filter: blur(7px);
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.622);
-
     width: 300mm;
     height: auto;
+    box-sizing: border-box; /*fixes the L&B*/
+
     padding: 2rem;
-    box-sizing: border-box;
+
     overflow: hidden;
 
-    transition: .5s ease;
+    background: rgba(78, 78, 78, 0.555);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
+    border-radius: 12px;
 }
 
-.break{
-    border: solid 1px;
-    border-color: var(--linebreak);
-    margin: 40px
+/* site heading */
+.site-heading{
+    font-size: 3rem;
+    animation: site-heading 10s infinite;
+
+    margin-bottom: 10px;
+}
+@keyframes site-heading{
+    0% {color: white;     
+        text-shadow: 8px 5px 12px rgba(255, 255, 255, 0.978) ;}
+    50% {color: white; 
+        /* opacity:; */
+        text-shadow: 10px 7px 9px rgba(255, 255, 255, 0.203) ;}
+    100% {color: white;
+        text-shadow: 8px 5px 12px rgba(255, 255, 255, 0.978) ;}
 }
 
-/* header */
-header{
-    margin-bottom: 0;
-    margin-left: 2rem;
-}
-
-/* heading */
-.bys{
-    font-size: 4rem;
-    animation: bys 5s infinite;
-}
-
-@keyframes bys{
-    0% {color: white}
-    50% {color: white; opacity: .4}
-    100% {color: white}
-}
-
-/* main navigation */
+/* navigation */
 .main-navigation{
     list-style: none;
-    margin-left: -35px;
-    margin-bottom: 0;
 
     display: flex;
-    gap: 1rem;
-}
-.main-navigation li{
-    border: 1px solid;
-    border-color: var(--button-color);
-    padding: var(--button-padding);
-    border-radius: var(--button-rounding);
-}
-.main-navigation a{
-    text-decoration: none;
-
-    color: var(--fontcolor);  
-    font-size: var(--common-font-size);
-
-    transition: .5s ease;
-}
-.main-navigation a:hover, .main-navigation li:hover{
-    opacity: .5;
-}
-.current-page{
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.445) !important; 
-}
-.youtubelink:hover{
-    transition: .5s ease;
-    background-color: rgba(217, 83, 94, 0.539);
-}
-
-/* album and "latest release" */
-.mainpage{
-    /* background-color: rgba(73, 73, 73, 0.575); */
-    margin-left: 20px;
-}
-
-.album-repr{
- margin-left: 1rem;
-}
-h3{
-    opacity: .75;
-    font-size: var(--h2-font-size);
-}
-
-.album{
-    font-size: var(--h1-font-size);
-}
-
-.wroth{
-    margin-left: 20px;
-    width: 800px;
-    height: auto;
-    
-    border-radius: 4px;
-
-    transition: .8s ease;
-}
-
-.wroth:hover{
-    opacity: .5;
-}
-
-.albumlink-yt{
-    list-style: none;
-    padding: 2rem;
-}
-.albumlink-yt a{
-    text-decoration: none;
-    color: var(--fontcolor);
-    font-size: var(--common-font-size);
-
-    border: 1px solid;
-    border-color: var(--button-color);
-    padding: var(--button-padding);
-    border-radius: var(--button-rounding);
-    transition: .5s ease;
-}
-.albumlink-yt a:hover{
-    opacity: .5;
-}
-.albumlist li{
-    margin-bottom: 30px;
-}
-
-/* play */
-.play{
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    gap: 5px;
+}
+.main-navigation a{
+    font-size: 1rem;
+    text-decoration: none;
+
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.52);
+    border-radius: 4px;
+
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main-navigation-link{
+    gap: 200px;
+}
+.main-navigation a:hover{
+    transition: .2s ease;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.235);
 }
 
-.bandcamp{
-    margin-left: 40px;
+/* MAINPAGE */
+
+.stream-album{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: 1.5rem;
+}
+.latest-release{
+    display: flex;
+    flex-direction: column;    
+}
+.album-title{
+    animation: album-title 7s infinite;
+}
+@keyframes album-title{
+    0% {color: white;     
+        text-shadow: 8px 5px 12px rgba(255, 255, 255, 0.619) ;}
+    50% {color: white; 
+        /* opacity:; */
+        text-shadow: 10px 7px 9px rgba(255, 255, 255, 0.203) ;}
+    100% {color: white;
+        text-shadow: 8px 5px 12px rgba(255, 255, 255, 0.619) ;}
+}
+
+/* bandcamp and youtube */
+.bandcamp-embed, .youtube{
+    opacity: .8;
+    filter: saturate(0);
+}
+.youtube{
+    display: flex;
+    justify-content: center;
+}
+.youtube-embed{
+    border-radius: 10px;
+}
+.youtube iframe{
+    width: 700px;
+}
+.bandcamp-embed:hover, .youtube:hover{
+    opacity: 1;
+    filter: saturate(.5);
 }
 .bandcamp-embed{
-border: 0; width: 800px; height: 570px
+    border: 0; 
+    border-radius: 10px; 
+    width:max-content; 
+    height: 600px;
 }
 
-.h3-ver2{
-    margin-top: 50px;
-}
 /* footer */
-
 .card{
-    position: relative;
-    list-style: none;
-    font-size: 1.3rem;
-    
-    margin-left: -40px;
-    }
-.card li{
-    padding:.5rem
+    display: flex;
+    flex-direction: column;
 }
-.card a{
+.card-content, .indic{
+    font-size: 1.1rem;
     text-decoration: none;
-    color: var(--fontcolor);
-    transition: .3s ease;
-    }
-.card a:hover{
+}
+.card-content:hover{
     opacity: .5;
-    }
+}
+.indic{
+    opacity: .75;
+    margin-bottom: 20px;
+}
 
-/* Responsive Design:
+
+/* RESPONSIVE
 * 480px is for smaller phones.
 * 600px covers most smartphones.
 * 768px includes larger phones and small tablets.*/
 
-@media(max-width: 600px){
+@media (max-width: 600px){
+*{
+    font-size: 1.1rem ;
 
-    body{
-    background: url(/graphics/Site/neo\ header\ crop\ 1.webp);
-    /* background-position: ; */
-    margin-left: -20px;
+
+    h3{ font-size: 1.4rem;}
+    h2{ font-size: 1.7rem;}
+
+    .break{
+        margin-top: 1px ;
+        margin-bottom: 10px;
     }
-    .a4{
-    width: 300nm;
+}
+.a4{
     height: auto;
-    padding: 0rem;
-    box-sizing: border-box;
-    overflow: hidden;
+    border-radius: 0px;
+    padding: 10px;
+}
 
-    transition: .5s ease;
-    }
-    /* .bys{
-        font-size: 2.5rem;
-    } */
-     .main-navigation{
-        flex-wrap: wrap;
-     }
-    .main-navigation a{
-        font-size: 1.2rem;
-    }
-    h3{
-        font-size: 1.6rem;
-    }
-    .wroth{
-        width: 90%;
+.site-heading{
+    font-size: 2.7rem ;
+}
+/* navigation */
+.main-navigation{
+    gap:10px;
+}
 
-    }
-    .album{
-        font-size: 2rem;
-        margin-left: -10px;
-        padding: 1rem;
-        transition: .3s ease;
-    }
-    .albumlink{
-        font-size: 1.2rem ;
-    }
-    .bandcamp-embed{
-    border: 0; width: 370px; height: 570px
-    }
+/* MAINPAGE */
 
-
-    /* footer */
-    .card{
-        margin-left: -10px;
-        font-size: 1.1rem;
-    }
-
-
-
+.stream-album{
+    justify-content: center;
+    gap: 10px;
+}
+.youtube iframe{
+    width: 380px;
+    height: 200px;
+}
+.bandcamp-embed{
+    width: 380px;
+}
 }

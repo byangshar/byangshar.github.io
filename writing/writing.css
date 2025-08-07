@@ -1,222 +1,187 @@
 *{
     font-family: monospace;
-}
+    font-size: 1.3rem;
+    color: white;
 
-:root{
-    --fontcolor: white;
 
-    --common-font-size: 1.5rem;
-    --h2-font-size:2rem;
-    --h1-font-size:2.5rem;
-
-    --linebreak: rgba(255, 255, 255, 0.096);
-
-    --button-color: rgba(152, 152, 152, 0.357);
-    --button-padding: 5px;
-    --button-rounding: 4px;
-}
-
-.a4{
-    background: rgba(0, 0, 0, 0.419);
-    background-repeat: no-repeat;
-    backdrop-filter: blur(7px);
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.622);
-
-    width: 300mm;
-    height: 300mm;
-    padding: 2rem;
-    box-sizing: border-box;
-    overflow: hidden;
-
-    transition: .5s ease;
-}
-
-.break{
-    border: solid 1px;
-    border-color: var(--linebreak);
-    margin: 40px
-}
-
-body {
-    background: url(/graphics/Writing/neobanner.webp) ;
-    /* background-color: gray; */
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    font-family: monospace;
-    color: var(--fontcolor);
+    transition: .4s ease;
 
     margin: 0;
-    display:flex;
+
+    .break{
+        border: 1px solid;
+        margin: auto;
+
+        margin-top: 20px ;
+        margin-bottom: 20px;
+
+        opacity: .2;
+    }
+
+    h3{ font-size: 1.4rem;}
+    h2{ font-size: 1.8rem;}
+
+
+}
+
+
+body{
+    background: url(/graphics/Writing/neobanner.jpg);
+    background-size: cover;
+
+    display: flex;
     justify-content: center;
 }
+.a4{
+    width: 300mm;
+    height: 300mm;
+    box-sizing: border-box; /*fixes the L&B*/
 
-/* header */
-header{
-    margin-bottom: 0;
-    margin-left: 2rem;
+    padding: 2rem;
+
+    overflow: hidden;
+
+    background: rgba(78, 78, 78, 0.555);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
+    border-radius: 12px;
 }
 
-/* heading */
-.bys{
-    font-size: 4rem;
-    animation: bys 5s infinite;
+/* site heading */
+.site-heading{
+    font-size: 3rem;
+    animation: site-heading 10s infinite;
+
+    margin-bottom: 10px;
+}
+@keyframes site-heading{
+    0% {color: white;     
+        text-shadow: 8px 5px 12px rgba(255, 255, 255, 0.978) ;}
+    50% {color: white; 
+        /* opacity:; */
+        text-shadow: 10px 7px 9px rgba(255, 255, 255, 0.203) ;}
+    100% {color: white;
+        text-shadow: 8px 5px 12px rgba(255, 255, 255, 0.978) ;}
 }
 
-@keyframes bys{
-    0% {color: white}
-    50% {color: white; opacity: .4}
-    100% {color: white}
-}
-
-    .mainpage{
-        display: flex;
-        justify-content: center;}
-
-
-/* main navigation */
+/* navigation */
 .main-navigation{
     list-style: none;
-    margin-left: -35px;
-    margin-bottom: 0;
 
-    display: flex;
-    gap: 1rem;
-}
-.main-navigation li{
-    border: 1px solid;
-    border-color: var(--button-color);
-    padding: var(--button-padding);
-    border-radius: var(--button-rounding);
-}
-.main-navigation a{
-    text-decoration: none;
-
-    color: var(--fontcolor);  
-    font-size: var(--common-font-size);
-
-    transition: .5s ease;
-}
-.main-navigation a:hover, .main-navigation li:hover{
-    opacity: .5;
-}
-.current-page{
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.445) !important; 
-}
-.youtubelink:hover{
-    transition: .5s ease;
-    background-color: rgba(217, 83, 94, 0.539);
-}
-
-.table{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    gap: 5px;
 }
-.row{
-    display: flex;
-    align-items: baseline;
-    background: rgba(68, 68, 68, 0.171);
+.main-navigation a{
+    font-size: 1rem;
+    text-decoration: none;
+
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.52);
+    border-radius: 4px;
+
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.main-navigation-link{
+    gap: 200px;
+}
+.main-navigation a:hover{
+    transition: .2s ease;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.235);
+}
+
+
+/* MAINPAGE */
+
+.table{
+    background: rgba(68, 68, 68, 0.378);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    width: 90%;
-}
-.year{
-    flex: 0 0 10%;
-    font-size: 3.2rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    
-    padding: 30px;
-}
-.month{
-    flex: 0 0 60px;
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
 
-    padding: 30px;
-}
-
-
-/* CLA */
-
-.cla{
     display: flex;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
 
-    padding:20px;
 }
-.date{
-    flex: 0 0 50px;
 
-    font-size: 1.8rem;
-    opacity: .75;
+.template-row{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
-.poem{
-    font-size: 1.8rem;
-    flex: 1;
+
+.year{font-size:2.2rem;font-weight: bolder;letter-spacing: 2px;}
+.month{font-size:1.8rem;font-weight: bold;letter-spacing: 2px;}
+
+.monthly-entries{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding-left: 200px;
 }
+.make-entries-inline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+}
+
 .poem-link{
     text-decoration: none;
-    color: var(--fontcolor);
-    transition: .4s ease;
+    
+    word-break: break-word;
+    overflow: break-word;
 }
 .poem-link:hover{
     opacity: .5;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 
-@media(max-width: 600px){
-    body{
-    margin-left: -20px;}
-    .a4{
-        height: 300mm;
-        padding: 0;
-    }
+@media (max-width:600px){
+*{
+    font-size: 1.1rem ;
 
-    /* navigation */
-    .main-navigation{
-    flex-wrap: wrap;
-    }
-    .main-navigation a{
-    font-size: 1.2rem;
-    }
 
-    /* table responsiveness */
-    .table{
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
+    h3{ font-size: 1.4rem;}
+    h2{ font-size: 1.7rem;}
 
+    .break{
+        margin-top: 1px ;
+        margin-bottom: 10px;
     }
-    .row{
-        display: flex;
-        justify-content: center;
+}
+.a4{
+    height: 300mm;
+    border-radius: 0px;
+    padding: 10px;
+}
 
-    }
-    .year{
-        font-size: 2.5rem;
-        padding: 20px;
-    }
-    .month{
-        font-size: 1.8rem;
-        flex: 0 0 auto;
-
-        padding: 20px;
-    }
-    .date{
-        font-size: 1.6rem;
-        flex: 0 0 auto;
-    }
-
-    .poem{
-        font-size: 1.5rem;
-    }
-
+/* navigation */
+.main-navigation{
+    gap:10px;
+}
+/* table */
+.monthly-entries{
+    padding-left: 10px;
+    
+}
+.make-entries-inline{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date{
+    opacity: .5;
+}
+.poem-link{
+    font-size: 1.3rem;
+}
 }

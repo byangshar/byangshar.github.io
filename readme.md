@@ -13,12 +13,17 @@ And that's about it. This is a personal website project.
 ------------
 
 ## Next Planned Improvements:
-* Better fluidity, specially the Writing page's mobile page.
-* Streamlining all CSS by adding the border tags into root.
-* Unifying Regular and Responsive Fonts and Colours into variables.
 * Add a link redirecting to this repository
 
+## Executed Improvements:
+* Better fluidity, specially the Writing page's mobile page.
+* Streamlining all CSS by adding the border tags into root.
+
 > edited: 1st August 2025.
+
+## Notes
+* the global font size is **1.3rem**
+* Navigation has a unique value of **1rem**, its responsive font-size being **1.1rem**
 
 ------------
 **For any inquiries, contact [byangshar.sanzhi@gmail.com](mailto:byangshar.sanzhi@gmail.com)**
