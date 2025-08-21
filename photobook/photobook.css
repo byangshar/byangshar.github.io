@@ -34,7 +34,7 @@ body{
 
 .a4{
     width: 300mm;
-    height: 300mm;
+    height: auto;
     box-sizing: border-box; /*fixes the L&B*/
 
     padding: 2rem;
@@ -100,42 +100,81 @@ body{
 
 .mainpage{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.non-single-entry{
-    margin: auto;
-}
-.entry{
-    width: 200px;
-    height: 200px;
+
+.entry, .entry:hover{
+    width: 49%;
+    height: 600px;
     object-fit: cover;
 
     margin-bottom: 5px;
 
 }
-.entry-landscape{
-    width: 415px;
-    height: 250px;
+.entry-landscape, .entry-landscape:hover{
+    width: 100%;
+    height: 500px;
     object-fit: cover;
 }
 .entry, .entry-landscape{
     border-radius: 4px;
+    box-shadow: 10px 50px 100px rgba(31, 31, 31, 0.507) ;
 }
-.entry:hover{
-    width: 350px;
-    height: auto;
-}
-.entry-landscape:hover{
-    height: 390px;
-    width: auto;
+
+.entry:hover, .entry-landscape:hover{
+    opacity: 1;
 }
 
 /* image comments */
-.desc, .date-journal{
-    font-size: 1.1rem;
-    opacity: .75;
+.date-inline{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    
+    gap: 20px;
 }
+
+.desc{
+    display: flex;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 2rem;
+
+    margin-bottom: 30px;
+}
+.date-it{
+    opacity: .5;
+}
+.entry-description{
+    margin: auto;
+    
+    padding-top: 20px;
+    width: 80%;
+}
+.actual-description{
+    font-size: 1.1rem;
+    text-align: center;
+}
+/* phone alert */
+.phone-alert{
+    pointer-events: none;
+    cursor: default;
+    user-select: none;
+    
+    display: flex;
+    justify-content: center;
+    height: 0 ;
+    
+    opacity: 0;
+}
+.phone-alert-text{
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
 
 /* RESPONSIVE */
 
@@ -143,14 +182,12 @@ body{
 *{
     font-size: 1.1rem ;
 
-
-    h3{ font-size: 1.4rem;}
-    h2{ font-size: 1.7rem;}
-
     .break{
-        margin-top: 1px ;
-        margin-bottom: 10px;
+        opacity: 0;
     }
+}
+body{
+    overflow: hidden;
 }
 .a4{
     height: auto;
@@ -159,25 +196,61 @@ body{
 }
 
 /* navigation */
+.site-heading{
+    height: 0;
+    opacity: 0;
+}
 .main-navigation{
-    gap:10px;
+    margin-bottom: 0;
+    height: 0;
+    opacity: 0;
 }
 
-.non-single-entry{
-    margin: ;
+/* mainpage */
+.mainpage{
+    opacity: 0
 }
 
-.entry-landscape, .entry-landscape:hover{
-    width: 415px;
-    height: 250px;
-    object-fit: cover;
+.phone-alert{
+    opacity: 1
 }
+}
+
+    /* HORIZONTAL RESPONSIVE */
+
+@media (max-width:950px){
+
+.a4{
+    height: auto;
+}
+
+/* mainpage */
+.mainpage{
+    justify-content: space-between;
+}
+
 .entry, .entry:hover{
-    width: 200px;
-    height: 200px;
+    width: 49%;
+    height: 500px;
+    justify-content: space-between;
     object-fit: cover;
 
     margin-bottom: 5px;
 
 }
+.entry-landscape, .entry-landscape:hover{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.entry, .entry-landscape{
+    border-radius: 4px;
+}
+
+
+/* image comments */
+.desc{
+    font-size: 1.6rem;
+}
+
 }

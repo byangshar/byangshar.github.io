@@ -13,13 +13,15 @@ And that's about it. This is a personal website project.
 ------------
 
 ## Next Planned Improvements:
-* Add a link redirecting to this repository
+NONE. (my college started :/)
 
 ## Executed Improvements:
+* Common font reduced to a normal size (1.1rem) of the Walkthrough, and Photobook Page.
+
 * Better fluidity, specially the Writing page's mobile page.
 * Streamlining all CSS by adding the border tags into root.
 
-> edited: 1st August 2025.
+> edited: 23rd August 2025.
 
 ## Notes
 * the global font size is **1.3rem**
