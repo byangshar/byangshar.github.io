@@ -162,7 +162,7 @@ body{
     }
 }
 .a4{
-    height: 300mm;
+    height: auto;
     border-radius: 0px;
     padding: 10px;
 }
