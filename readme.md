@@ -20,8 +20,6 @@ NONE. (my college started :/)
 
 * Common font reduced to a normal size (1.1rem) of the Walkthrough, and Photobook Page.
 
-> edited: 23rd August 2025.
-
 ## Notes
 * the global font size is **1.3rem**
 * Navigation has a unique value of **1rem**, its responsive font-size being **1.1rem**
