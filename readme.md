@@ -16,10 +16,9 @@ And that's about it. This is a personal website project.
 NONE. (my college started :/)
 
 ## Executed Improvements:
-* Common font reduced to a normal size (1.1rem) of the Walkthrough, and Photobook Page.
+* a global css file that governs font sizes and <div> tags that're held in common by all pages.
 
-* Better fluidity, specially the Writing page's mobile page.
-* Streamlining all CSS by adding the border tags into root.
+* Common font reduced to a normal size (1.1rem) of the Walkthrough, and Photobook Page.
 
 > edited: 23rd August 2025.
 
