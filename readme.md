@@ -16,9 +16,10 @@ And that's about it. This is a personal website project.
 NONE. (my college started :/)
 
 ## Executed Improvements:
-* a global css file that governs font sizes and <div> tags that're held in common by all pages.
+* Several entries from the previous website added to the Writing Page.
+* Appearance of the Writing page improved
 
-* Common font reduced to a normal size (1.1rem) of the Walkthrough, and Photobook Page.
+* a global css file that governs font sizes and <div> tags that're held in common by all pages.
 
 ## Notes
 * the global font size is **1.3rem**

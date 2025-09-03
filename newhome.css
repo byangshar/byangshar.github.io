@@ -65,6 +65,31 @@ body{
     height: 600px;
 }
 
+/* youtube-sec */
+.youtube-sec-div{
+    display: flex;
+}
+.youtube-sec{
+
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+
+    filter: saturate(0);
+}
+.youtube-sec:hover{
+    filter: saturate(1);
+}
+
+.chatter{
+    width: 500px;
+}
+.chatter-txt{
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: break-word;
+}
+
 /* footer */
 .card{
     display: flex;
