@@ -30,7 +30,7 @@ body{
 
 }
 .entry-landscape, .entry-landscape:hover{
-    width: 100%;
+    width: 99%;
     height: 500px;
     object-fit: cover;
 }
