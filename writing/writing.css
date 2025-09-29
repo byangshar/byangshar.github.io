@@ -14,6 +14,13 @@ body{
 
 /* MAINPAGE */
 
+.pending-notice{
+    font-size: .7rem;
+    margin: auto;
+    align-items: center;
+    width: 50%;
+}
+
 .table{
     background: rgba(68, 68, 68, 0.378);
     backdrop-filter: blur(10px);
@@ -32,6 +39,20 @@ body{
 
 .year{font-size:2.2rem;font-weight: bolder;letter-spacing: 2px;}
 .month{font-size:1.8rem;font-weight: bold;letter-spacing: 2px;}
+
+.date-b{
+    animation: date-b 3.7s infinite;
+}
+@keyframes date-b{
+    0% {color: white;     
+        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.978) ;}
+    50% {color: white; 
+        /* opacity:; */
+        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.203) ;}
+    100% {color: white;
+        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.978) ;}
+}
+
 
 .monthly-entries{
     width: 100%;
@@ -77,6 +98,9 @@ body{
 }
 .date{
     opacity: .5;
+}
+.date-b{
+    opacity: .3;
 }
 .poem-link{
     font-size: 1.3rem;
