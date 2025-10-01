@@ -44,11 +44,14 @@ June
 Seldom Stay Afloat. 
 “…to deplore until ripe of age.” 
 
+### Unifying and updating style.css of the redirect pages
+### Getting around to making the realeases page
+
 ## Executed Improvements:
+* Nagivation of the website made quicker using redirects, more about that on the Walkthrough page.
+
 * Several entries from the previous website added to the Writing Page.
 * Appearance of the Writing page improved
-
-* a global css file that governs font sizes and <div> tags that're held in common by all pages.
 
 ## Notes
 * the global font size is **1.3rem**

@@ -9,7 +9,7 @@ body{
 
 .a4{
     width: 300mm;
-    height: 300mm;
+    height: auto;
     box-sizing: border-box; /*fixes the L&B*/
 
 

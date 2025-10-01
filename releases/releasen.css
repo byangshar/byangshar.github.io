@@ -1,0 +1,52 @@
+body{
+    background-image: url(/releases/cover.webp);
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+}
+
+.a4{
+    background: rgba(66, 66, 66, 0.555);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
+}
+
+h2{
+    margin-bottom: 20px;
+}
+/* MAINPAGE */
+
+.title-n-citation{
+    display: flex;
+    align-items: baseline;
+}
+.album-citation{
+    font-size: 1rem;
+    font-style: italic;
+    opacity: .75;
+    margin-left: 10px;
+}
+
+.album-mention{
+    display: flex;
+    margin-bottom: 20px;
+}
+.yt-embed{
+    width: 500px;
+    height:500px;
+    filter: saturate(0);
+    border-radius: 4px;
+}
+.yt-embed:hover{
+    filter: saturate(.75);
+}
+
+.al-comments{
+    font-style: italic;
+    margin-left: 30px;
+ 
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: break-word;
+}
