@@ -48,8 +48,10 @@ Seldom Stay Afloat.
 ### Getting around to making the realeases page
 
 ## Executed Improvements:
-* Nagivation of the website made quicker using redirects, more about that on the Walkthrough page.
+* Addition of the first entry on the Writing Page for October [A tree that grows three-storeys tall](https://byangshar.github.io/writing/2025/October/4.html)
+* "My Socials" section added to the homepage
 
+* Nagivation of the website made quicker using redirects, more about that on the Walkthrough page.
 * Several entries from the previous website added to the Writing Page.
 * Appearance of the Writing page improved
 
