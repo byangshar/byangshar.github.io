@@ -36,7 +36,7 @@ h2{
     width: 500px;
     height:500px;
     filter: saturate(0);
-    border-radius: 4px;
+    border-radius: 10px;
 }
 .yt-embed:hover{
     filter: saturate(.75);

@@ -68,6 +68,7 @@ body{
 /* youtube-sec */
 .youtube-sec-div{
     display: flex;
+    flex-wrap: 
 }
 .youtube-sec{
 
@@ -95,7 +96,7 @@ body{
     display: flex;
     padding-top: 1rem;
 
-    justify-content: center;
+    /* justify-content: ; */
 }
 .fin-link{
     max-width: max-content;
@@ -103,16 +104,22 @@ body{
 
     border: 1px solid;
     border-color: rgba(189, 189, 189, 0.39);
-    border-radius: 4px;
+    border-radius: 3rem;
 
-    padding: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: .5rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+.button-soc{
+    height: 3rem;
+}
+.button-soc:hover{
+    filter: saturate(30);
 }
 .fin-me{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 
@@ -145,16 +152,18 @@ body{
     font-size: 2.7rem ;
 }
 
+.fin-me{
+    justify-content: center;
+
+    padding-bottom: 20px;
+}
+.button-soc{
+    height: 2rem;
+}
+
 /* MAINPAGE */
 .stream-album{
     justify-content: center;
     gap: 10px;
-}
-.youtube iframe{
-    width: 380px;
-    height: 200px;
-}
-.bandcamp-embed{
-    width: 380px;
 }
 }
