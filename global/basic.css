@@ -82,6 +82,41 @@
 }
 
 
+/* --------------------------------------------- */
+
+    /* HORIZONTAL RESPONSIVE */
+
+@media (max-width:1000px){
+
+.a4{
+    height: auto;
+}
+
+/* MAINPAGE */
+
+.stream-album{
+    justify-content: center;
+    gap: 10px;
+}
+.youtube iframe{
+    width: 400px;
+    min-height: 200px;
+    height: auto;
+}
+.bandcamp-embed{
+    width: 350px;
+}
+.youtube-sec{
+    
+    width: 400px;
+    height: 400px;
+}
+.chatter{
+    width: 300px;
+}
+
+}
+
 /* -------------------------------------------------- */
 
 @media (max-width: 600px){
@@ -117,21 +152,14 @@
     gap: 10px;
 }
 .youtube iframe{
-    width: 380px;
+    width: 100%;
     height: 200px;
 }
 .bandcamp-embed{
-    width: 380px;
+    width: 100%;
 }
-}
-
-/* --------------------------------------------- */
-
-    /* HORIZONTAL RESPONSIVE */
-
-@media (max-width:950px){
-
-.a4{
-    height: auto;
+.youtube-sec{
+    width: 100%;
+    height: 300px;
 }
 }
