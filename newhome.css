@@ -68,7 +68,7 @@ body{
 /* youtube-sec */
 .youtube-sec-div{
     display: flex;
-    flex-wrap: 
+    /* flex-wrap:  */
 }
 .youtube-sec{
 
