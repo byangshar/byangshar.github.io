@@ -7,9 +7,11 @@
 }
 
 body{
-  background: url(/graphics/redirect/1.jpg);
+  background: url(/graphics/redirect/1.gif);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  
 
   display: flex;
   margin: 0;
@@ -26,12 +28,41 @@ a:hover{
 }
 
 .box{
-  border: 1px solid;
+  border: 1px solid white;
   padding: 3rem;
   border-radius: 10px;
 
 
   background-color: rgba(0, 0, 0, 0.548);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   box-shadow: 10px 5px 50px rgb(0, 0, 0);
+
+  animation: box 2s infinite ;
+/* steps(1, end) */
+}
+
+@keyframes box{
+  0% {
+    border: 1px solid white;}
+  50% {
+    border: 1px solid rgba(255, 255, 255, 0);}
+}
+
+.spl-link{
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: .75;
+  color: gray;
+}
+
+
+@media (max-width:600px){
+  *{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .box{
+    padding: 1rem;
+  }
 }
