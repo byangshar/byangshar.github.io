@@ -16,40 +16,28 @@ And that's about it. This is a personal website project.
 
 ### Adding all writing from previous website (list):
 
-#### May
-> Out of Commission (added) 
 
-#### April
-> Offshore, tucked aside
+|Month		| Poem						| Status|
+|-----------|--------------------------|-------|
+|March		| Out of Comission			| Added |
+|April		| Offshore, tucked aside	| 		|
+|			| Sole light in deep blue	| Added	|
+|			| Never depart from Lhasa	| Added	|
+|			| To fall off a cliff		| Added	|
+|			| Confronting the pinoeer of the heightened-Second Sex| Added|
+|			|...And so, we continued to stay here.					|		|
+|May		| Evening Saudade			|		|
+|			| The Twenty-Fourth Hour	|		|
+|			| Amidst, Cluster, Exile	| Added	|
+|			| Recital from the Edge, onlooking the start			| Added|
+|			| This spiral falls apart, as it reaches the end.		|		|
+|			| In-between moments		|		|
+|			| We wished from their un-impending doom				|		|
+|			| Settling on a Name, a Date, and Away.				|		|
+|			| "Catch the morning rays, no matter what!"			|		|
+|June		| Seldom Stay Afloat.		|		|
+|			| "...to deplore until ripe of age"					|		|
 
-> Sole light in deep blue (added)
-
-> Never depart from Lhasa
-
-> To fall off a cliff (added)
-
-> Confronting the pioneer of the heightened- Second Sex (added)
-
-> …And so, we continued to stay here.
-
-#### May
-> Evening Saudade
-
-> The Twenty-Fourth Hour 
-
-> Amidst, Cluster, Exile (added)
-
-> Recital from the Edge, onlooking the start
-
-> This spiral falls apart, as it reaches the end. 
-
-> In-between moments 
-
-> We wished for their un-impending doom 
-
-> Settling on a Name, a Date, and Away.
-
-> "Catch the morning rays, no matter what!" 
 
 #### June
 > Seldom Stay Afloat. 
