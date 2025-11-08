@@ -99,3 +99,26 @@ body{
     font-size: 1.3rem;
 }
 }
+
+@media (max-width:1200px){
+
+
+/* table */
+.monthly-entries{
+    padding-left: 10px;
+    
+}
+.make-entries-inline{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date{
+    opacity: .5;
+}
+.date-b{
+    opacity: .3;
+}
+.poem-link{
+    font-size: 1.3rem;
+}
+}
