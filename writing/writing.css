@@ -14,13 +14,6 @@ body{
 
 /* MAINPAGE */
 
-.pending-notice{
-    font-size: .7rem;
-    margin: auto;
-    align-items: center;
-    width: 50%;
-}
-
 .table{
     background: rgba(68, 68, 68, 0.378);
     /* backdrop-filter: blur(10px); */

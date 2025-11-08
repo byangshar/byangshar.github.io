@@ -14,46 +14,11 @@ And that's about it. This is a personal website project.
 
 ## Next Planned Improvements:
 
-### Adding all writing from previous website (list):
-
-
-|Month		| Poem						| Status|
-|-----------|--------------------------|-------|
-|March		| Out of Comission			| Added |
-|April		| Offshore, tucked aside	| 		|
-|			| Sole light in deep blue	| Added	|
-|			| Never depart from Lhasa	| Added	|
-|			| To fall off a cliff		| Added	|
-|			| Confronting the pinoeer of the heightened-Second Sex| Added|
-|			|...And so, we continued to stay here.					|		|
-|May		| Evening Saudade			|		|
-|			| The Twenty-Fourth Hour	|		|
-|			| Amidst, Cluster, Exile	| Added	|
-|			| Recital from the Edge, onlooking the start			| Added|
-|			| This spiral falls apart, as it reaches the end.		|		|
-|			| In-between moments		|		|
-|			| We wished from their un-impending doom				|		|
-|			| Settling on a Name, a Date, and Away.				|		|
-|			| "Catch the morning rays, no matter what!"			|		|
-|June		| Seldom Stay Afloat.		|		|
-|			| "...to deplore until ripe of age"					|		|
-
-
-#### June
-> Seldom Stay Afloat. 
-
-> “…to deplore until ripe of age.” 
-
 ### Unifying and updating style.css of the redirect pages
 ### Getting around to making the realeases page
 
 ## Executed Improvements:
-* Addition of the first entry on the Writing Page for October [A tree that grows three-storeys tall](https://byangshar.github.io/writing/2025/October/4.html)
-* "My Socials" section added to the homepage
-
-* Nagivation of the website made quicker using redirects, more about that on the Walkthrough page.
-* Several entries from the previous website added to the Writing Page.
-* Appearance of the Writing page improved
+* Addition of writing entries from the old site
 
 ## Notes
 * the global font size is **1.3rem**
