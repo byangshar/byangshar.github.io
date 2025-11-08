@@ -13,9 +13,7 @@ And that's about it. This is a personal website project.
 ------------
 
 ## Next Planned Improvements:
-
-### Unifying and updating style.css of the redirect pages
-### Getting around to making the realeases page
+.........
 
 ## Executed Improvements:
 * Addition of writing entries from the old site
