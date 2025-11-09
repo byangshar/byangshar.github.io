@@ -1,5 +1,5 @@
 body{
-    background: url(/graphics/photobook/banner.jpeg);
+    background: url(/graphics/photobook/cover.webp);
     background-size: cover;
     
     display: flex;
@@ -7,7 +7,7 @@ body{
 }
 
 .a4{
-    background: rgba(78, 78, 78, 0.555);
+    background: rgba(12, 12, 12, 0.555);
     backdrop-filter: blur(10px);
     box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
 }

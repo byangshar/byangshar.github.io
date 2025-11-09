@@ -86,7 +86,7 @@
 
     /* HORIZONTAL RESPONSIVE */
 
-@media (max-width:1000px){
+@media (max-width:1200px){
 
 .a4{
     height: auto;
@@ -112,7 +112,7 @@
     height: 400px;
 }
 .chatter{
-    width: 300px;
+    width: 400px;
 }
 
 }
@@ -152,14 +152,14 @@
     gap: 10px;
 }
 .youtube iframe{
-    width: 100%;
+    width: 1;
     height: 200px;
 }
 .bandcamp-embed{
-    width: 100%;
+    width: 1;
 }
 .youtube-sec{
-    width: 100%;
+    width: 1;
     height: 300px;
 }
 }

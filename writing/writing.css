@@ -1,13 +1,14 @@
 
 body{
-    background: url(/graphics/Writing/banner2.jpg);
+    background: url(/graphics/Writing/cover.webp);
     background-size: cover;
+    background-position: center;
 
     display: flex;
     justify-content: center;
 }
 .a4{
-    background: rgba(78, 78, 78, 0.555);
+    background: rgba(5, 5, 5, 0.555);
     backdrop-filter: blur(10px);
     box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
 }
@@ -15,7 +16,7 @@ body{
 /* MAINPAGE */
 
 .table{
-    background: rgba(68, 68, 68, 0.378);
+    background: rgba(0, 0, 0, 0.378);
     /* backdrop-filter: blur(10px); */
     border-radius: 10px;
 

@@ -1,6 +1,6 @@
 body{
-    background: url(/graphics/Site/neo\ header\ crop\ 1.webp);
-    background-position: bottom;
+    background: url(/graphics/walkthru/cover.webp);
+    /* background-position:; */
     background-size: cover;
     
     display: flex;
@@ -13,7 +13,7 @@ body{
     box-sizing: border-box; /*fixes the L&B*/
 
 
-    background: rgba(78, 78, 78, 0.635);
+    background: rgba(0, 0, 0, 0.635);
     backdrop-filter: blur(10px);
     box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
 
