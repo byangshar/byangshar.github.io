@@ -46,6 +46,10 @@ body{
     margin-left: 60px;
 
     margin-bottom: 80px;
+
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: break-word;
 }
 
 .poem-lines{
