@@ -16,6 +16,7 @@ body{
 /* MAINPAGE */
 
 .table{
+
     background: rgba(0, 0, 0, 0.378);
     /* backdrop-filter: blur(10px); */
     border-radius: 10px;
@@ -26,6 +27,15 @@ body{
 }
 
 .template-row{
+
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.template-row-heading{
+    /* cursor: pointer; */
+    
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +86,11 @@ body{
     opacity: .5;
 }
 
+.writing-link-text{
+    text-align: right;
+    max-width: 500px;
+}
+
 /* RESPONSIVE */
 
 @media (max-width:600px){
@@ -99,6 +114,12 @@ body{
 .poem-link{
     font-size: 1.3rem;
 }
+
+.writing-link-text{
+    font-size: 1.3rem;
+    text-align: left;
+    max-width: auto;
+}
 }
 
 @media (max-width:1200px){
@@ -121,5 +142,10 @@ body{
 }
 .poem-link{
     font-size: 1.3rem;
+}
+.writing-link-text{
+    font-size: 1.3rem;
+    text-align: left;
+    max-width: auto;
 }
 }
