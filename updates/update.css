@@ -1,5 +1,6 @@
 body{
-    background: url(/graphics/Site/cover.webp);
+    background: url(/updates/updates.jpg);
+    background-position: center;
     background-size: cover;
     
     display: flex;
