@@ -16,7 +16,7 @@ And that's about it. This is a personal website project.
 .........
 
 ## Executed Improvements:
-* Addition of writing entries from the old site
+* collapsible year-tables in the Writing section.
 
 ## Notes
 * the global font size is **1.3rem**
