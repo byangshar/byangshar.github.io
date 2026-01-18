@@ -89,6 +89,8 @@ body{
     white-space: pre-wrap;
     word-break: break-word;
     overflow: break-word;
+
+    padding-bottom: 10px;
 }
 
 /* MY SOCIALS */
@@ -171,3 +173,4 @@ body{
     width: 6770px;
 }
 }
+

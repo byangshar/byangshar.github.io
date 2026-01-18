@@ -117,6 +117,41 @@
 
 }
 
+/* --------------------------------------------- */
+
+    /* IPAD */
+
+@media (max-width:900px){
+
+.a4{
+    height: auto;
+}
+
+/* MAINPAGE */
+
+.stream-album{
+    justify-content: center;
+    gap: 10px;
+}
+.youtube iframe{
+    width: 300px;
+    min-height: 200px;
+    height: auto;
+}
+.bandcamp-embed{
+    width: 350px;
+}
+.youtube-sec{
+    
+    width: 250px;
+    height: 300px;
+}
+.chatter{
+    width: 400px;
+}
+
+}
+
 /* -------------------------------------------------- */
 
 @media (max-width: 600px){
