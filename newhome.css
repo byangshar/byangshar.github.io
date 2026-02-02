@@ -1,5 +1,6 @@
 body{
-    background: url(/graphics/Site/cover.webp);
+    /* background: url(/graphics/Site/cover.webp); */
+    background: url(/graphics/Site/neo\ cover.jpg);
     background-size: cover;
     
     display: flex;
@@ -18,9 +19,11 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
 
     padding-top: 1.5rem;
+    
 }
 .latest-release{
     display: flex;
@@ -52,7 +55,7 @@ body{
     border-radius: 10px;
 }
 .youtube iframe{
-    width: 700px;
+    width: 1080px;
 }
 .bandcamp-embed:hover, .youtube:hover{
     opacity: 1;
@@ -61,15 +64,25 @@ body{
 .bandcamp-embed{
     border: 0; 
     border-radius: 10px; 
-    width:max-content; 
+    width:500px; 
     height: 600px;
 }
 
-/* youtube-sec */
-.youtube-sec-div{
+
+/* current array */
+
+.current-array{
+    padding-top: 20px;
+
     display: flex;
-    /* flex-wrap:  */
+    justify-content: center;
+
+    overflow: scroll;
+    gap: 10px;
 }
+
+/* youtube-sec */
+
 .youtube-sec{
 
     width: 500px;
@@ -82,38 +95,24 @@ body{
     filter: saturate(1);
 }
 
-.chatter{
-    width: 500px;
-}
-.chatter-txt{
-    white-space: pre-wrap;
-    word-break: break-word;
-    overflow: break-word;
 
-    padding-bottom: 10px;
-}
 
 /* MY SOCIALS */
 .fin-me{
     display: flex;
+    justify-content: center;
+    gap: 200px;
     padding-top: 1rem;
 
-    /* justify-content: ; */
 }
 .fin-link{
+
     max-width: max-content;
     text-decoration: none;
 
-    border: 1px solid;
-    border-color: rgba(189, 189, 189, 0.39);
-    border-radius: 3rem;
-
-    padding: .5rem;
-    padding-left: .75rem;
-    padding-right: .75rem;
 }
 .button-soc{
-    height: 3rem;
+    height: 4rem;
 }
 .button-soc:hover{
     filter: saturate(30);
@@ -124,6 +123,11 @@ body{
     gap: 1rem;
 }
 
+/* lin-card */
+.lin-endcard{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* footer */
 .card{

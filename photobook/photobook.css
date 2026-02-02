@@ -7,6 +7,7 @@ body{
 }
 
 .a4{
+    width: 300mm !important;
     background: rgba(12, 12, 12, 0.555);
     backdrop-filter: blur(10px);
     box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);

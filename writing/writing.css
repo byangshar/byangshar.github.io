@@ -15,6 +15,11 @@ body{
 
 /* MAINPAGE */
 
+.mainpage{
+    display: flex;
+    justify-content: center;
+}
+
 .table{
 
     background: rgba(0, 0, 0, 0.378);
@@ -23,7 +28,7 @@ body{
 
     display: flex;
     flex-direction: column;
-
+    width: 90%;
 }
 
 .template-row{
@@ -85,7 +90,6 @@ body{
     padding-left: 300px;
 }
 .make-entries-inline{
-    
 
     display: flex;
     flex-wrap: wrap;

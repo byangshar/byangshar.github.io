@@ -23,7 +23,7 @@
 }
 
 .a4{
-    width: 300mm;
+    width: 1920px;
     height: auto;
     min-height: 300mm;
     box-sizing: border-box; /*fixes the L&B*/
@@ -89,6 +89,7 @@
 @media (max-width:1200px){
 
 .a4{
+    width: 1200px;
     height: auto;
 }
 
@@ -99,20 +100,16 @@
     gap: 10px;
 }
 .youtube iframe{
-    width: 400px;
+    width: 800px;
     min-height: 200px;
     height: auto;
 }
 .bandcamp-embed{
-    width: 350px;
+    width: 300px;
 }
-.youtube-sec{
-    
+.youtube-sec{  
     width: 400px;
     height: 400px;
-}
-.chatter{
-    width: 400px;
 }
 
 }
@@ -134,7 +131,7 @@
     gap: 10px;
 }
 .youtube iframe{
-    width: 300px;
+    width: 350px;
     min-height: 200px;
     height: auto;
 }
@@ -146,10 +143,15 @@
     width: 250px;
     height: 300px;
 }
-.chatter{
-    width: 400px;
-}
 
+.current-array{
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: left;
+
+    overflow: auto;
+    gap: 10px;
 }
 
 /* -------------------------------------------------- */
@@ -187,11 +189,11 @@
     gap: 10px;
 }
 .youtube iframe{
-    width: 1;
-    height: 200px;
+    width: 550px;
+    height: 300px;
 }
 .bandcamp-embed{
-    width: 1;
+    width: 550px;
 }
 .youtube-sec{
     width: 1;
