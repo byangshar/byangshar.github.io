@@ -20,6 +20,13 @@ body{
     justify-content: center;
 }
 
+/* buttons; collapsible */
+
+.y2025{
+    max-height: 400px;
+    overflow: scroll;
+}
+
 .table{
 
     background: rgba(0, 0, 0, 0.378);
@@ -39,7 +46,6 @@ body{
 }
 
 .template-row-heading{
-    /* cursor: pointer; */
     
     padding: 20px;
     display: flex;
@@ -87,7 +93,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
 
-    padding-left: 300px;
+    padding-left: 600px;
 }
 .make-entries-inline{
 
@@ -113,23 +119,23 @@ body{
     max-width: 500px;
 }
 
-/* buttons; collapsible */
-
-.y2025{
-    max-height: 0;
-    overflow: hidden;
-}
-
-
 /* RESPONSIVE */
 
 @media (max-width:600px){
 
+.y2025{
+    max-height: 300px;
+}
 
 /* table */
+
+.table{
+        width: 100%;
+}
+
 .monthly-entries{
     padding-left: 10px;
-    
+    width: 90%;    
 }
 .make-entries-inline{
     flex-direction: column;

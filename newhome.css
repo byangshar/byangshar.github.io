@@ -16,6 +16,7 @@ body{
 /* MAINPAGE */
 
 .stream-album{
+    /* overflow: scroll; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,6 +57,8 @@ body{
 }
 .youtube iframe{
     width: 1080px;
+    height: 600px;
+
 }
 .bandcamp-embed:hover, .youtube:hover{
     opacity: 1;
@@ -94,8 +97,6 @@ body{
 .youtube-sec:hover{
     filter: saturate(1);
 }
-
-
 
 /* MY SOCIALS */
 .fin-me{
@@ -151,6 +152,7 @@ body{
 * 480px is for smaller phones.
 * 600px covers most smartphones.
 * 768px includes larger phones and small tablets.*/
+
 
 @media (max-width: 600px){
 
