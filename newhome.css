@@ -52,14 +52,28 @@ body{
     display: flex;
     justify-content: center;
 }
-.youtube-embed{
-    border-radius: 10px;
-}
-.youtube iframe{
-    width: 1080px;
-    height: 600px;
 
+.modern-yt-embed{
+    min-width: 398px;
+    height: 600px;
+    width: clamp(280px, 90vw, 720px);
+
+    border-radius: 10px;
+    background-size: 150%;
+    object-fit: contain;
+    background-position:  center center;
 }
+
+.modern-yt-embed1-1{
+    min-width: 400px;
+    height: 400px;
+        
+    border-radius: 10px;
+    background-size: 190%;
+    object-fit: contain;
+    background-position:  center center;
+}
+
 .bandcamp-embed:hover, .youtube:hover{
     opacity: 1;
     filter: saturate(.5);

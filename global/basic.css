@@ -23,7 +23,7 @@
 }
 
 .a4{
-    width: 1920px;
+    width: max-content;
     height: auto;
     min-height: 300mm;
     box-sizing: border-box; /*fixes the L&B*/
@@ -99,11 +99,6 @@
     justify-content: center;
     gap: 10px;
 }
-.youtube iframe{
-    width: 800px;
-    min-height: 200px;
-    height: auto;
-}
 .bandcamp-embed{
     width: 300px;
 }
@@ -129,11 +124,6 @@
 .stream-album{
     justify-content: center;
     gap: 10px;
-}
-.youtube iframe{
-    width: 350px;
-    min-height: 200px;
-    height: auto;
 }
 .bandcamp-embed{
     width: 350px;
@@ -187,11 +177,6 @@
 .stream-album{
     justify-content: center;
     gap: 10px;
-}
-.youtube iframe{
-    width: 400px;
-    max-width: 100%;
-    height: 300px;
 }
 .bandcamp-embed{
     width: 400px;

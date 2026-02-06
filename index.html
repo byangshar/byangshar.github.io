@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="/newhome.css">
     <link rel="stylesheet" href="/global/basic.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css">
+
     <title>Byangshar Sanzhi</title>
 </head>
 
@@ -36,10 +39,11 @@
             
             <div class="stream-album">
                 <div class="youtube">
-                <iframe class="youtube-embed" src="https://www.youtube-nocookie.com/embed/abq9GrQfHeM?si=VnQjVVp-Il7qeuvi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <lite-youtube class="modern-yt-embed" videoid="abq9GrQfHeM"></lite-youtube>
                 </div>
+
                 <div class="bandcamp">
-                <iframe class="bandcamp-embed" src="https://bandcamp.com/EmbeddedPlayer/album=3913546181/size=large/bgcol=333333/linkcol=0f91ff/artwork=none/transparent=true/" seamless><a href="https://byangshar.bandcamp.com/album/what-remains-of-the-hidden">What Remains of the Hidden by Byangshar Sanzhi</a></iframe>                
+                    <iframe class="bandcamp-embed" src="https://bandcamp.com/EmbeddedPlayer/album=3913546181/size=large/bgcol=333333/linkcol=0f91ff/artwork=none/transparent=true/" seamless><a href="https://byangshar.bandcamp.com/album/what-remains-of-the-hidden">What Remains of the Hidden by Byangshar Sanzhi</a></iframe>                
                 </div>
         </div>
 
@@ -52,9 +56,12 @@
     </div>
             
     <div class="current-array">
-                <iframe class="youtube-sec" src="https://www.youtube.com/embed/IR34DGjxffk?si=wX5TIunwHCaDByga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-                <iframe class="youtube-sec" src="https://www.youtube-nocookie.com/embed/6QuQrnTbQ74?si=iTjUq5LW5n6nlzXu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe class="youtube-sec" src="https://www.youtube.com/embed/V69e46MM-FI?si=mRzv80omvnimQX3H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <lite-youtube class="modern-yt-embed1-1" videoid="IR34DGjxffk"></lite-youtube>
+                    <lite-youtube class="modern-yt-embed1-1" videoid="6QuQrnTbQ74"></lite-youtube>
+                    <lite-youtube class="modern-yt-embed1-1" videoid="V69e46MM-FI"></lite-youtube>
+                <!-- <iframe class="youtube-sec" src="https://www.youtube.com/embed/IR34DGjxffk?si=wX5TIunwHCaDByga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>    
+                <iframe class="youtube-sec" src="https://www.youtube-nocookie.com/embed/6QuQrnTbQ74?si=iTjUq5LW5n6nlzXu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                <iframe class="youtube-sec" src="https://www.youtube.com/embed/V69e46MM-FI?si=mRzv80omvnimQX3H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe> -->
     </div>
     
     <div class="break"></div>
@@ -80,5 +87,11 @@
     </div>
 
 </div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.js"
+    defer>
+    </script>
+
 </body>
 </html>
