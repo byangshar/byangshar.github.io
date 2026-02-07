@@ -23,7 +23,7 @@
 }
 
 .a4{
-    width: max-content;
+    width: 100%;
     height: auto;
     min-height: 300mm;
     box-sizing: border-box; /*fixes the L&B*/
@@ -102,11 +102,10 @@
 .bandcamp-embed{
     width: 300px;
 }
-.youtube-sec{  
-    width: 400px;
-    height: 400px;
-}
+.modern-yt-embed{
+    background-size: 160%;
 
+}
 }
 
 /* --------------------------------------------- */
@@ -126,12 +125,18 @@
     gap: 10px;
 }
 .bandcamp-embed{
-    width: 350px;
+    width: 25vw;
 }
-.youtube-sec{
-    
-    width: 250px;
-    height: 300px;
+
+.modern-yt-embed{
+    width: 45vw;
+
+    background-size: 280%;
+}
+
+.modern-yt-embed1-1{
+    width: 30vw;
+    height: 30vw;
 }
 
 .current-array{
@@ -143,6 +148,7 @@
     overflow: auto;
     gap: 10px;
 }
+
 }
 /* -------------------------------------------------- */
 
@@ -179,11 +185,17 @@
     gap: 10px;
 }
 .bandcamp-embed{
-    width: 400px;
-    max-width: 100%;
+    width: 95vw;
 }
-.youtube-sec{
-    width: 1;
-    height: 300px;
+.modern-yt-embed{
+    width: 95vw;
+    height: 55vw;
+
+    background-size: 110%;
+}
+.modern-yt-embed1-1{
+    width: 50vw;
+    max-width: 100%;
+    height: 50vw;
 }
 }
