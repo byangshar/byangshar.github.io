@@ -1,8 +1,8 @@
 
 body{
-    background: url(/graphics/Writing/cover.webp);
+    background: url(/graphics/Writing/sight.webp);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ body{
 
 .table{
 
-    background: rgba(0, 0, 0, 0.378);
+    background: rgba(20, 20, 20, 0.227);
     /* backdrop-filter: blur(10px); */
     border-radius: 10px;
 
@@ -56,12 +56,9 @@ body{
 
     background-color: rgba(255, 255, 255, 0);
     border: 0px;
-
-    opacity: .5;
 }
 .year:hover{
     letter-spacing: 5px;
-    opacity: 1;
 }
 
 /* year current*/

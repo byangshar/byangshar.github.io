@@ -1,7 +1,8 @@
 body{
     /* background: url(/graphics/Site/cover.webp); */
-    background: url(/graphics/Site/neo\ cover.jpg);
+    background: url(/graphics/Site/red.webp);
     background-size: cover;
+    background-position: center;
     
     display: flex;
     justify-content: center;
