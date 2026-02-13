@@ -18,59 +18,10 @@ body{
 
 .mainpage{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    row-gap: 1vw;
 }
 
-/* new order */
-
-.group-tables{
-    display: flex;
-    gap: 1vw;
-}
-
-.single-table{
-    background-color: rgba(0, 0, 0, 0.392);
-    width: 30vw;
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-/* fonts */
-.title-year{
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.title-month{
-    font-size: 1.5rem;
-    font-weight: bold;
-    /* text-indent: 1vw; */
-}
-.title-date{
-    text-indent: 1vw;
-}
-
-/* entry */
-
-.entry{
-    display: flex;
-    gap: 2vw;
-    
-}
-.poem-link{
-    text-decoration: none;
-
-    word-break: break-word;
-    overflow: break-word;
-}
-.poem-link:hover{
-    opacity: .5;
-}
-
-
-
-/* new order */
+/* buttons; collapsible */
 
 .y2025{
     max-height: 400px;
@@ -151,6 +102,15 @@ body{
     padding-bottom: 15px;
 }
 
+.poem-link{
+    text-decoration: none;
+
+    word-break: break-word;
+    overflow: break-word;
+}
+.poem-link:hover{
+    opacity: .5;
+}
 
 .writing-link-text{
     text-align: right;
