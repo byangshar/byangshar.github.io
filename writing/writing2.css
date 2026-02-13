@@ -1,0 +1,227 @@
+
+body{
+    background: url(/graphics/Writing/sight.webp);
+    background-size: cover;
+    background-position: bottom;
+
+    display: flex;
+    justify-content: center;
+}
+.a4{
+    background: rgba(5, 5, 5, 0.393);
+    /* background: rgba(5, 5, 5, 0.555); */
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
+}
+
+/* MAINPAGE */
+
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1vw;
+}
+
+/* new order */
+
+.group-tables{
+    display: flex;
+    gap: 1vw;
+}
+
+.single-table{
+    background-color: rgba(0, 0, 0, 0.392);
+    width: 30vw;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* fonts */
+.title-year{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.title-month{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* text-indent: 1vw; */
+}
+.title-date{
+    text-indent: 1vw;
+}
+
+/* entry */
+
+.entry{
+    display: flex;
+    gap: 2vw;
+    
+}
+.poem-link{
+    text-decoration: none;
+
+    word-break: break-word;
+    overflow: break-word;
+}
+.poem-link:hover{
+    opacity: .5;
+}
+
+
+
+/* new order */
+
+.y2025{
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.table{
+
+    background: rgba(20, 20, 20, 0.227);
+    /* backdrop-filter: blur(10px); */
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.template-row{
+
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.template-row-heading{
+    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.year{font-size:2.2rem;font-weight: bolder;letter-spacing: 2px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+.year:hover{
+    letter-spacing: 5px;
+}
+
+/* year current*/
+.year-c{font-size:2.2rem;font-weight: bolder;letter-spacing: 2px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+
+.month{font-size:1.8rem;font-weight: bold;letter-spacing: 2px;}
+
+.date-b{
+    animation: date-b 3.7s infinite;
+}
+@keyframes date-b{
+    0% {color: white;     
+        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.978) ;}
+    50% {color: white; 
+        /* opacity:; */
+        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.203) ;}
+    100% {color: white;
+        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.978) ;}
+}
+
+
+.monthly-entries{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding-left: 500px;
+}
+.make-entries-inline{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+}
+
+
+.writing-link-text{
+    text-align: right;
+    max-width: 500px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:600px){
+
+.y2025, .y2024{
+    max-height: 300px;
+
+
+}
+
+/* table */
+
+.table{
+        width: 100%;
+}
+
+.monthly-entries{
+    padding-left: 10px;
+    width: 90%;    
+}
+.make-entries-inline{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date{
+    opacity: .5;
+}
+.date-b{
+    opacity: .3;
+}
+.poem-link{
+    font-size: 1.3rem;
+}
+
+.writing-link-text{
+    font-size: 1.3rem;
+    text-align: left;
+    max-width: auto;
+}
+}
+
+@media (max-width:1200px){
+
+
+/* table */
+.monthly-entries{
+    padding-left: 10px;
+    
+}
+.make-entries-inline{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date{
+    opacity: .5;
+}
+.date-b{
+    opacity: .3;
+}
+.poem-link{
+    font-size: 1.3rem;
+}
+.writing-link-text{
+    font-size: 1.3rem;
+    text-align: left;
+    max-width: auto;
+}
+}
