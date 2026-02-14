@@ -115,7 +115,7 @@ body{
 @media (max-width:800px){
 
 .single-table{
-    width: calc(95vw - 2rem);    
+    width: calc(95vw - 5rem);    
 }
 
 .entry{
