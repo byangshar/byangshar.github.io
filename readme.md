@@ -23,4 +23,4 @@ And that's about it. This is a personal website project.
 * Navigation has a unique value of **1rem**, its responsive font-size being **1.1rem**
 
 ------------
-**For any inquiries, contact [byangshar.sanzhi@gmail.com](mailto:byangshar.sanzhi@gmail.com)**
+**For any inquiries, contact [sanzh34@proton.me](mailto:sanzh34@proton.me)**
