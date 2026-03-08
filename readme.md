@@ -10,6 +10,8 @@ any issues so far, so I've stuck.
 
 And that's about it. This is a personal website project.
 
+> This website now uses Google Tag which provides me with data of views emassed at any given length of time. I'm still getting used to it, this is new to me.
+
 ------------
 
 ## Next Planned Improvements:
