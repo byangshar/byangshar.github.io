@@ -3,23 +3,22 @@
     font-size: 1.1rem;
     color: white;
 
-
     transition: .4s ease;
-
     margin: 0;
 
     .break{
-        border: 1px solid;
         margin: auto;
-
+        border: 1px solid;
+        opacity: .2;
         margin-top: 20px ;
         margin-bottom: 20px;
-
-        opacity: .2;
     }
 
     h3{ font-size: 1.4rem;}
     h2{ font-size: 1.8rem;}
+
+    scrollbar-width: none;
+
 }
 
 .a4{
