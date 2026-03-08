@@ -94,15 +94,34 @@ body{
 
 /* current array */
 
+.vertical-stac{
+/*    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow: hidden;
+    height: 25vw;
+*/}
+
 .current-array{
+    flex: 1;
     padding-top: 20px;
-
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow-y: auto;
     justify-content: center;
+    gap: 10px;
 
-    overflow: scroll;
+}
+
+.desc-array{
+    flex: 1;
+    padding-top: 20px;
+    display: flex;
+    overflow-x: auto;
     gap: 10px;
 }
+
 
 /* youtube-sec */
 
