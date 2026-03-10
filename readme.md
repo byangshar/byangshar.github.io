@@ -14,11 +14,8 @@ And that's about it. This is a personal website project.
 
 ------------
 
-## Next Planned Improvements:
-.........
-
 ## Executed Improvements:
-* collapsible year-tables in the Writing section.
+* Update of the website's file structure to be more streamlined.
 
 ## Notes
 * the global font size is **1.3rem**
