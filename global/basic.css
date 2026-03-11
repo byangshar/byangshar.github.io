@@ -27,7 +27,7 @@
     min-height: 300mm;
     box-sizing: border-box; /*fixes the L&B*/
     /* border-radius: 12px; */
-    padding: 2rem;
+    /* padding: 2rem; */
     overflow: hidden;
 }
 
