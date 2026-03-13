@@ -1,0 +1,154 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+    transition: .5s ease-in-out;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1.38;
+    margin:0;
+    padding:0;
+
+    list-style: none;
+    
+}
+a {
+    text-decoration: none;
+    background-color: rgba(45, 45, 45, 0.225);
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+a:hover{
+    background-color: rgba(45, 45, 45, 0.5);
+    border: 1px solid rgba(255, 255, 255, .75);
+
+}
+.a4{
+    width: 300mm;
+    height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* MAIN PAGE */
+.poem-div{
+    /* border: 1px solid red; */
+
+padding-inline: 60px;
+}
+
+.heading{
+    font-size: 3rem;
+    margin-bottom: 80px;
+
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: break-word;
+
+}
+
+.prose{
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+ 
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: break-word;
+}
+
+.end-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.quote, .signature{
+    background-color: rgba( 255, 255, 255, .2);
+    border-radius: 5px;
+    padding: 1rem;
+    min-height: 70px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote{
+    max-width: 75vw;
+    width: 25vw;
+}
+
+.navigation-englosure{
+    max-width: max-content;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0px 40px 0px;
+
+}
+.navigation a{
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:1370px) {
+
+body{
+    line-height: 1.2;    
+}
+
+.a4{
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+}
+
+/* MAIN PAGE */
+.poem-div{
+padding-inline: 10px;
+}
+
+.heading{
+    font-size: 3rem;
+    margin-bottom: 60px;
+}
+
+.prose{
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+}
+
+.end-div{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.quote, .signature{
+    border-radius: 5px;
+    padding: 1rem;
+    min-height: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote, .signature{
+    max-width: 80vw;
+    width: 80vw;
+}   
+}

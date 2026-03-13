@@ -16,6 +16,7 @@ And that's about it. This is a personal website project.
 
 ## Executed Improvements:
 * Update of the website's file structure to be more streamlined.
+* new css for all entries on the writing page starting from March 2026.
 
 ## Notes
 * the global font size is **1.3rem**
