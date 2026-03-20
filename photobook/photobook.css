@@ -6,6 +6,14 @@ body{
     justify-content: center;
 }
 
+a{
+    text-decoration: none;
+    opacity: .75;
+}
+a:hover{
+    opacity: 1;
+}
+
 .a4{
     background: rgba(5, 5, 5, 0.393);
     backdrop-filter: blur(5px);
@@ -40,8 +48,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    
-    gap: 20px;
+    gap: 10px;
 }
 
 .desc{
@@ -69,11 +76,18 @@ body{
 
     /* HORIZONTAL RESPONSIVE */
 
-@media (max-width:600px){
+@media (max-width:1370px){
 
 /* mainpage */
 .mainpage{
     justify-content: space-between;
+}
+
+.date-inline{
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin: 10px; 
 }
 
 .entry{
