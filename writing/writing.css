@@ -42,7 +42,7 @@ body{
 }
 
 .y-2024, .y-2025, .y-2026{
-    overflow: scroll !important;
+    /* overflow: scroll; */
     max-height: 70vh;
 
 }
