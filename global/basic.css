@@ -21,6 +21,32 @@
 
 }
 
+/* LNK */
+
+.lnkdiv{
+    display: flex;
+}
+.lnk{
+    display: flex;
+
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 2px;
+
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+
+    border: 1px solid;
+    border-color: rgba(189, 189, 189, 0.39);
+    border-radius: 4px;
+}
+.lnk:hover{
+    transition: .2s ease;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.235);
+}
+
+/* -------------------------------- */
+
 .a4{
     width: 100%;
     height: auto;
