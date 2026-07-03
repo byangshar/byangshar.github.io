@@ -97,7 +97,7 @@ padding-inline: 60px;
 
 /* RESPONSIVE */
 
-@media (max-width:1370px) {
+@media (max-width:1000px) {
 
 body{
     line-height: 1.2;    
