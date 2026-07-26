@@ -2,14 +2,14 @@ body{
     /* background: url(/graphics/Site/cover.webp); */
     background: url(/graphics/home.webp);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     
     display: flex;
     justify-content: center;
 }
 
 .a4{
-    background: rgba(5, 5, 5, 0.393);
+    /* background: rgba(5, 5, 5, 0.393); */
     /* backdrop-filter: blur(5px); */
     box-shadow: 10px 10px 80px rgba(0, 0, 0, 0.785);
 }
@@ -107,7 +107,7 @@ body{
 .stext-segment{
     /* border: 1px solid white; */
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.225);
+    background-color: rgba(25, 25, 25, 0.5);
 
     display: flex;
     flex-direction: column;

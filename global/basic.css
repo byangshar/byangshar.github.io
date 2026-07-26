@@ -69,12 +69,16 @@
     gap: 5px;
 }
 .main-navigation a{
+
     font-size: 1rem;
     text-decoration: none;
+    font-weight: bold;
 
     border: 1px solid;
     border-color: rgba(189, 189, 189, 0.39);
     border-radius: 4px;
+
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
 
     padding: 2px;
     padding-left: 10px;
@@ -85,7 +89,7 @@
 }
 .main-navigation a:hover{
     transition: .2s ease;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.235);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* site heading */
