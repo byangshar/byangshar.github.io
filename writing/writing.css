@@ -6,9 +6,12 @@ body{
 
     display: flex;
     justify-content: center;
+
+    overflow: hidden;
 }
 .a4{
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    max-height: 100vh;
 
     /* background: rgba(35, 35, 35, .6); */
     /* background: rgba(5, 5, 5, 0.555); */
@@ -35,7 +38,7 @@ body{
 .single-table{
     background-color: rgba(34, 34, 34, 0.50);
     width: 30vw;
-    height: 70vh;
+    height: 65vh;
     overflow: scroll;
     border-radius: 5px;
     padding: 1rem;
@@ -98,7 +101,7 @@ body{
 
 /* RESPONSIVE */
 
-@media (max-width:1800px){
+@media (max-width:1400px){
 
 .group-tables{
     display: flex;
