@@ -47,12 +47,18 @@
 
 /* -------------------------------- */
 
+body{
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    
+}
 .a4{
     width: 100%;
-    height: auto;
-    min-height: 300mm;
+    /* height: auto; */
     box-sizing: border-box; /*fixes the L&B*/
-    padding: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    /* padding: 2rem; */
     overflow: hidden;
 }
 
