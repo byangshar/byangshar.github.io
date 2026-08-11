@@ -213,6 +213,18 @@ body{
     filter: saturate(1);
 }
 
+/* IMAGE PREVIEW */
+
+.img-preview{
+    display: flex; 
+    gap: 10px;
+}
+.img-preview-img{
+    width: max-content; 
+    height: 200px; 
+    object-fit:contain;
+}
+
 /* RESPONSIVE
 * 480px is for smaller phones.
 * 600px covers most smartphones.
@@ -285,5 +297,14 @@ body{
 .modern-yt-embed{
     max-width: 80vw;;
 }
+
+.img-preview{
+    /* flex-direction: column; */
+
+}
+.img-preview-img{
+    height: 15vh; 
+}
+
 }
 

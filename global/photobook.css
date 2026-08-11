@@ -1,5 +1,5 @@
 body{
-    background: url(/graphics/photobook/new-dawn.webp);
+    background: rgb(23, 23, 23);
     background-size: cover;
     
     display: flex;
@@ -39,7 +39,7 @@ a:hover{
 
 .entry{
     width: max-content;
-    height: 700px;
+    height: 500px;
     object-fit:contain;
 }
 
