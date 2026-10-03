@@ -1,7 +1,7 @@
 body{
-    /* background: url(/graphics/Site/cover.webp); */
-    background: url(/graphics/home.webp);
-    background-size: cover;
+    background: url(/graphics/Site/painting.jpg);
+    /* background: url(/graphics/home.webp); */
+    /* background-size: cover; */
     background-position: center;
     
     display: flex;
@@ -107,7 +107,7 @@ body{
 .stext-segment{
     /* border: 1px solid white; */
     border-radius: 5px;
-    background-color: rgba(66, 66, 66, 0.5);
+    background-color: rgba(24, 24, 24, .8);
 
     display: flex;
     flex-direction: column;
